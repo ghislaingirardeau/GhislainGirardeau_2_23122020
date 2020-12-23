@@ -13,7 +13,10 @@
     de les identifer rapidement dans CSS -->
     <nav>
         <div><img src="/element/images/logo/Reservia@3x.png" alt="" id="logo"> </div>
-        <div id="lien">Hébergements Activités S'inscire</div><!-- H et A = ancre a creer -->
+        <div id="lien">
+            <p>Hébergements</p>
+            <p>Activités</p> 
+            <p>S'inscire</p></div><!-- H et A = ancre a creer -->
     </nav>
 
     <header>
@@ -29,7 +32,7 @@
     <main>
         <article id="hebergement_m">
             <h2>Hébergements à Marseille</h2> <!-- layout identique pour chaque titre -->
-            <section id="bloc_image">
+            <section id="bloc_image_m">
                 <div class="image_h"><!-- meme css pour les image_h du groupe -->
                     <p>Auberge la Cannebière</p>
                 </div>
@@ -54,7 +57,8 @@
 
         <article id="populaire">
             <h2>Les plus populaires</h2>
-            <div id="icone_histo">icone</div>
+            <p id="icone">icone</p>
+            <section id="bloc_image_p">
             <div class="image_p"><!-- meme css pour les image_p du groupe -->
                 <p>Hôtel Le soleil du matin</p>
             </div>
@@ -63,7 +67,8 @@
             </div>
             <div class="image_p">
                 <p>Hôtel Tout bleu et Blanc</p>
-            </div>  
+            </div>
+            </section>  
         </article>
     
         
@@ -92,7 +97,7 @@
         </article>
     </main>
 
-    <footer>
+    <footer><!-- p interieur : liste de puce et effacer puce css -->
         <!-- Construction en 3 block, display flex, CSS identique -->
         <div id="a_propos">
             <h3>A propos</h3>

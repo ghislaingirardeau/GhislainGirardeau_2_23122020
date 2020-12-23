@@ -15,9 +15,12 @@ nav {
     width: 70%;
     border: 1px dashed;
     text-align: right;
+    display: flex;
+    justify-content: flex-end;
 }
 header {
   background-color: #deebff;
+  border: 1px dashed;
 }
 
 main {
@@ -30,10 +33,11 @@ main {
     border: 1px dashed;
     width: 60%;
 }
-#bloc_image{
+#bloc_image_m{
     border: 1px dashed;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .image_h{
     width: 30%;
@@ -43,6 +47,12 @@ main {
 #populaire{
     border: 1px dashed;
     width: 30%;
+   
+}
+#bloc_image_p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .image_p{
     border: 1px dashed;
@@ -63,4 +73,13 @@ main {
 footer {
   background-color: red;
   display: flex;
+}
+#a_propos{
+    width: 33%;
+}
+#nos_herbegements{
+    width: 33%;
+}
+#assistance{
+    width: 33%;
 }
