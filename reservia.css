@@ -3,3 +3,15 @@
     margin: auto;
     border: 1px black dashed;
 }
+header{
+    background-color: yellow;
+}
+section{
+    background-color:red;
+}
+article{
+    background-color: blue;
+}
+footer{
+    background-color: green;
+}
