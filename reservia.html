@@ -7,23 +7,28 @@
     <title>Reservia</title>
 </head>
 
-<body id="bloc_page"><!-- parametre du bloc -->
+<body id="bloc_page">
+    <!-- parametre du bloc -->
+    <!-- chaque div relatif a un bloc interne et attribut pour chaque div afin 
+    de les identifer rapidement dans CSS -->
     <header>
         <div id="logo"></div>
-        <div id="lien">Hébergements Activités S'inscire</div>
+        <div id="lien">Hébergements Activités S'inscire</div><!-- H et A = ancre a creer -->
     </header>
+
     <section>
         <div id="texte">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p></p>
         </div>
-        <div id="recherche"></div>
+        <div id="recherche"></div><!-- ajout des formulaires -->
         <div id="filtre"></div>
         <div id="info"></div>
     </section>
+
     <article>
         <div id="hebergement">
-            <h2>Hébergements à Marseille</h2>
+            <h2>Hébergements à Marseille</h2> <!-- layout identique pour chaque titre -->
         </div>
         <div id="populaire">
             <h2>Les plus populaires</h2>
@@ -32,7 +37,8 @@
             <h2>Activités à Marseille</h2>
         </div>
     </article>
-    <footer>
+
+    <footer> <!-- Construction en 3 block, display flex, CSS identique -->
         <div id="a_propos">
             <h3>A propos</h3>
         </div>

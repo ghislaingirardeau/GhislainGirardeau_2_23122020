@@ -2,7 +2,7 @@
     width: 900px;
     margin: auto;
     border: 1px black dashed;
-}
+}/* flexbox en organisation general page puis detaillé dans les blocs */
 header{
     background-color: yellow;
 }
