@@ -37,12 +37,15 @@ main {
 }
 .image_h{
     width: 240px;
+    border: 1px dashed;
 }
-
 
 #populaire{
     border: 1px dashed;
     width: 325px;
+}
+.image_p{
+    border: 1px dashed;
 }
 
 footer {
