@@ -1,5 +1,5 @@
 #bloc_page {
-  width: 1200px;
+  width: 90%;
   margin: auto;
   border: 1px black dashed;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
@@ -28,7 +28,7 @@ main {
 }
 #hebergement_m{
     border: 1px dashed;
-    width: 750px;
+    width: 60%;
 }
 #bloc_image{
     border: 1px dashed;
@@ -36,17 +36,29 @@ main {
     flex-wrap: wrap;
 }
 .image_h{
-    width: 240px;
+    width: 30%;
     border: 1px dashed;
 }
 
 #populaire{
     border: 1px dashed;
-    width: 325px;
+    width: 30%;
 }
 .image_p{
     border: 1px dashed;
 }
+#activite{
+    border: 1px blue dashed;
+    width: 100%;
+}
+#bloc_image_a{
+    width: 100%;
+}/* flex column wrap et definir height max img lare and small */
+.image_a{
+    border: 1px dashed;
+    width: 25%;
+}
+
 
 footer {
   background-color: red;
