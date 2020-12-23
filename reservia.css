@@ -3,13 +3,13 @@
     margin: auto;
     border: 1px black dashed;
 }/* flexbox en organisation general page puis detaillé dans les blocs */
-header{
+nav{
     background-color: yellow;
 }
-section{
+header{
     background-color:red;
 }
-article{
+main{
     background-color: blue;
 }
 footer{
