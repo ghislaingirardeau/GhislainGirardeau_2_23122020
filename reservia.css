@@ -1,14 +1,15 @@
 #bloc_page {
-  width: 90%;
+  width: 100%;
   margin: auto;
   border: 1px black dashed;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 header {
   display: flex;
   justify-content: space-between;
+  height: 100px;
 }
 #logo {
-  width: 20%;
+  width: 50%;
   border: 1px dashed;
 }
 #lien {
@@ -21,6 +22,7 @@ header {
 nav {
   background-color: #deebff;
   border: 1px dashed;
+  height: 320px;
 }
 
 main {
@@ -28,6 +30,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 1250px;
 }
 #hebergement_m {
   border: 1px dashed;
@@ -70,6 +73,7 @@ main {
 
 footer {
   background-color: red;
+  height: 220px;
   display: flex;
 }
 #a_propos {
