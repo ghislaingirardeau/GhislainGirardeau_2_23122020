@@ -3,7 +3,7 @@
   margin: auto;
   border: 1px black dashed;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
-nav {
+header {
   display: flex;
   justify-content: space-between;
 }
@@ -11,14 +11,14 @@ nav {
   width: 20%;
   border: 1px dashed;
 }
-#lien{
-    width: 70%;
-    border: 1px dashed;
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
+#lien {
+  width: 70%;
+  border: 1px dashed;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
 }
-header {
+nav {
   background-color: #deebff;
   border: 1px dashed;
 }
@@ -29,57 +29,55 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-#hebergement_m{
-    border: 1px dashed;
-    width: 60%;
+#hebergement_m {
+  border: 1px dashed;
+  width: 60%;
 }
-#bloc_image_m{
-    border: 1px dashed;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+#bloc_image_m {
+  border: 1px dashed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.image_h{
-    width: 30%;
-    border: 1px dashed;
-}
-
-#populaire{
-    border: 1px dashed;
-    width: 30%;
-   
-}
-#bloc_image_p{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.image_p{
-    border: 1px dashed;
-}
-#activite{
-    border: 1px blue dashed;
-    width: 100%;
-}
-#bloc_image_a{
-    width: 100%;
-}/* flex column wrap et definir height max img lare and small */
-.image_a{
-    border: 1px dashed;
-    width: 25%;
+.image_h {
+  width: 30%;
+  border: 1px dashed;
 }
 
+#populaire {
+  border: 1px dashed;
+  width: 30%;
+}
+#bloc_image_p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.image_p {
+  border: 1px dashed;
+}
+#activite {
+  border: 1px blue dashed;
+  width: 100%;
+}
+#bloc_image_a {
+  width: 100%;
+} /* flex column wrap et definir height max img lare and small */
+.image_a {
+  border: 1px dashed;
+  width: 25%;
+}
 
 footer {
   background-color: red;
   display: flex;
 }
-#a_propos{
-    width: 33%;
+#a_propos {
+  width: 33%;
 }
-#nos_herbegements{
-    width: 33%;
+#nos_herbegements {
+  width: 33%;
 }
-#assistance{
-    width: 33%;
+#assistance {
+  width: 33%;
 }
