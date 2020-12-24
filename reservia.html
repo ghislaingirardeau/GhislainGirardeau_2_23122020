@@ -11,15 +11,16 @@
     <!-- parametre du bloc -->
     <!-- chaque div relatif a un bloc interne et attribut pour chaque div afin 
     de les identifer rapidement dans CSS -->
-    <nav>
+    <header>
         <div><img src="/element/images/logo/Reservia@3x.png" alt="" id="logo"> </div>
         <div id="lien">
-            <p>Hébergements</p>
-            <p>Activités</p> 
-            <p>S'inscire</p></div><!-- H et A = ancre a creer -->
-    </nav>
+            <p>Hébergements</p><!-- H et A = ancre a creer -->
+            <p>Activités</p>
+            <p>S'inscire</p> <!-- media queries : changer ordre, inscrire ordre  -->
+        </div>
+    </header>
 
-    <header>
+    <nav>
         <div id="texte">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p></p>
@@ -27,13 +28,14 @@
         <div id="recherche">recherche</div><!-- ajout des formulaires -->
         <div id="filtre">filtre</div>
         <div id="info">plus de</div>
-    </header>
+    </nav>
 
     <main>
-        <article id="hebergement_m">
+        <section id="hebergement_m">
             <h2>Hébergements à Marseille</h2> <!-- layout identique pour chaque titre -->
-            <section id="bloc_image_m">
-                <div class="image_h"><!-- meme css pour les image_h du groupe -->
+            <article id="bloc_image_m">
+                <div class="image_h">
+                    <!-- meme css pour les image_h du groupe -->
                     <p>Auberge la Cannebière</p>
                 </div>
                 <div class="image_h">
@@ -50,31 +52,32 @@
                 </div>
                 <div class="image_h">
                     <p>Hôtel chez Amina</p>
-                </div>          
-            </section>
+                </div>
+            </article>
             <p>Afficher plus</p>
-        </article>
+        </section>
 
-        <article id="populaire">
+        <section id="populaire">
             <h2>Les plus populaires</h2>
             <p id="icone">icone</p>
-            <section id="bloc_image_p">
-            <div class="image_p"><!-- meme css pour les image_p du groupe -->
-                <p>Hôtel Le soleil du matin</p>
-            </div>
-            <div class="image_p">
-                <p>Au coeur de l'eau Chambres d'hotes</p>
-            </div>
-            <div class="image_p">
-                <p>Hôtel Tout bleu et Blanc</p>
-            </div>
-            </section>  
-        </article>
-    
-        
-        <article id="activite">
+            <article id="bloc_image_p">
+                <div class="image_p">
+                    <!-- meme css pour les image_p du groupe -->
+                    <p>Hôtel Le soleil du matin</p>
+                </div>
+                <div class="image_p">
+                    <p>Au coeur de l'eau Chambres d'hotes</p>
+                </div>
+                <div class="image_p">
+                    <p>Hôtel Tout bleu et Blanc</p>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="activite">
             <h2>Activités à Marseille</h2>
-            <section id="bloc_image_a"></section>
+            <article id="bloc_image_a">
             <div class="image_a">
                 <p>Vieux Port</p>
             </div>
@@ -93,11 +96,12 @@
             <div class="image_a">
                 <p>Parc Longchamp</p>
             </div>
-        </section>       
-        </article>
+            </article>
+        </section>
     </main>
 
-    <footer><!-- p interieur : liste de puce et effacer puce css -->
+    <footer>
+        <!-- p interieur : liste de puce et effacer puce css -->
         <!-- Construction en 3 block, display flex, CSS identique -->
         <div id="a_propos">
             <h3>A propos</h3>
