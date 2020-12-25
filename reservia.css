@@ -29,7 +29,6 @@ nav {
 }
 
 main {
-  background-color: #f2f2f2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* pour definir les memes marges de chaque coté */
@@ -38,28 +37,30 @@ main {
   margin: auto;
 }
 #hebergement_m {
-  border: 1px dashed;
+  background-color: #f2f2f2;
+  border-radius: 10px;
   width: 61%;
   padding-left: 3.5%;
   min-height: 50%;
 }
 #bloc_image_m {
-  border: 1px dashed;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* ecart entre image */
   align-content: space-between;
   height: 70%;
-  width: 95%;
+  width: 96%;
 }
 .image_h {
-  width: 28.5%;
-  height: 46.5%;
-  border: 1px dashed;
+  width: 29%;
+  height: 43%;
+  border: 4px white solid;
+  border-radius: 20px;
 }
 
 #populaire {
-  border: 1px dashed;
+  background-color: #f2f2f2;
+  border-radius: 10px;
   width: 29%;
   max-height: 50%;
   padding-left: 3.5%;
@@ -71,9 +72,10 @@ main {
   justify-content: space-between;
 }
 .image_p {
-  border: 1px dashed;
   height: 28%;
   width: 87%;
+  border: 4px white solid;
+  border-radius: 20px;
   margin-bottom: 5%;
 }
 #activite {
@@ -120,7 +122,7 @@ main {
 }
 
 footer {
-  background-color: red;
+  background-color: #f2f2f2;
   min-height: 220px;
   display: flex;
   justify-content: center;
