@@ -49,7 +49,8 @@ main {
   width: 95%;
 }
 .image_h {
-  width: ;width: 28.5%;
+  width: ;
+  width: 28.5%;
   height: 46.5%;
   border: 1px dashed;
 }
@@ -75,14 +76,43 @@ main {
 #activite {
   border: 1px blue dashed;
   width: 100%;
-  min-height: 50%;
+  max-height: 50%;
+  margin-bottom: 4%;
 }
 #bloc_image_a {
+  border: 1px red dashed;
   width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
 } /* flex column wrap et definir height max img lare and small */
-.image_a {
+.image_a_long {
   border: 1px dashed;
-  width: 25%;
+  width: 22.4%;
+  height: 100%;
+}
+.image_a_fort{
+  border: 1px dashed;
+  width: 22.4%;
+  height: 54%;
+}
+.image_a_ile{
+  border: 1px dashed;
+  width: 22.4%;
+  height: 37%;
+}
+.image_a_notre{
+  border: 1px dashed;
+  width: 22.4%;
+  height: 44%;
+}
+.image_a_parc{
+  border: 1px dashed;
+  width: 22.4%;
+  height: 47%;
 }
 
 footer {
