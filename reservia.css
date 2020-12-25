@@ -1,13 +1,13 @@
 #bloc_page {
   /* widht en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
-  width: 93%; /* -7% pour prendre en compte les marges left and right */
-  margin: auto;
   border: 1px black dashed;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 header {
   display: flex;
   justify-content: space-between;
   min-height: 100px;
+  width: 93%; /* -7% pour prendre en compte les marges left and right */
+  margin: auto;
 }
 #logo {
   width: 50%;
@@ -24,6 +24,8 @@ nav {
   background-color: #deebff;
   border: 1px dashed;
   min-height: 320px;
+  width: 93%; /* -7% pour prendre en compte les marges left and right */
+  margin: auto;
 }
 
 main {
@@ -32,6 +34,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between; /* pour definir les memes marges de chaque coté */
   min-height: 1250px;
+  width: 93%; /* -7% pour prendre en compte les marges left and right */
+  margin: auto;
 }
 #hebergement_m {
   border: 1px dashed;
@@ -88,8 +92,8 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-} /* flex column wrap et definir height max img lare and small */
-.image_a_long {
+} /* taille d'image differente dans activité */
+.image_a_long { /* meme attribut pour les 2 images longs */
   border: 1px dashed;
   width: 22.4%;
   height: 100%;
@@ -119,13 +123,18 @@ footer {
   background-color: red;
   min-height: 220px;
   display: flex;
+  justify-content: center;
+  
 }
 #a_propos {
-  width: 33%;
+  width: 30.9%;
+  border: 1px dashed;
 }
 #nos_herbegements {
-  width: 33%;
+  width: 30.9%;
+  border: 1px dashed;
 }
 #assistance {
-  width: 33%;
+  width: 30.9%;
+  border: 1px dashed;
 }
