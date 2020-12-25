@@ -47,13 +47,12 @@ main {
   border: 1px dashed;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* ecart entre image a regler */
+  justify-content: space-between; /* ecart entre image */
   align-content: space-between;
   height: 70%;
   width: 95%;
 }
 .image_h {
-  width: ;
   width: 28.5%;
   height: 46.5%;
   border: 1px dashed;
@@ -62,7 +61,7 @@ main {
 #populaire {
   border: 1px dashed;
   width: 29%;
-  min-height: 50%;
+  max-height: 50%;
   padding-left: 3.5%;
 }
 #bloc_image_p {
@@ -93,27 +92,28 @@ main {
   justify-content: space-between;
   align-content: space-between;
 } /* taille d'image differente dans activité */
-.image_a_long { /* meme attribut pour les 2 images longs */
+.image_a_long {
+  /* meme attribut pour les 2 images longs */
   border: 1px dashed;
   width: 22.4%;
   height: 100%;
 }
-.image_a_fort{
+.image_a_fort {
   border: 1px dashed;
   width: 22.4%;
   height: 54%;
 }
-.image_a_ile{
+.image_a_ile {
   border: 1px dashed;
   width: 22.4%;
   height: 37%;
 }
-.image_a_notre{
+.image_a_notre {
   border: 1px dashed;
   width: 22.4%;
   height: 44%;
 }
-.image_a_parc{
+.image_a_parc {
   border: 1px dashed;
   width: 22.4%;
   height: 47%;
@@ -124,7 +124,6 @@ footer {
   min-height: 220px;
   display: flex;
   justify-content: center;
-  
 }
 #a_propos {
   width: 30.9%;
