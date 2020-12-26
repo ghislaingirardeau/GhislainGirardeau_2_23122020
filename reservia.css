@@ -166,5 +166,9 @@ footer {
   #activite {
     height: 500px;
   }
+  #image_a_mobile{
+    width: 30%;
+  height: 46%;
+  }
  
 }
