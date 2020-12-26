@@ -178,5 +178,22 @@ footer {
     width: 30%;
   height: 46%;
   }
- 
+}
+
+@media screen and (max-width: 768px){
+
+  #bloc_page {
+    background-color: greenyellow;
+  }
+
+  #bloc_image_m {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    height: 1255px;
+  }
+  .image_h {
+    width: 100%;
+  }
 }
