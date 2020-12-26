@@ -234,4 +234,11 @@ footer {
     border: 4px black solid;
     border-radius: 20px;
   }
+  footer{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3.5%;
+    height: 485px;
+  }
 }
+
