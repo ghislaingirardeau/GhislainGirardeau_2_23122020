@@ -193,14 +193,13 @@ footer {
   #bloc_image_m {
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-content: space-between;
     height: 1280px;
-    width: 100%;
     border: 2px red solid;
+    width: 100%;
   }
   .image_h {
-    width: 100%;
+    width: 93%;
     height: 200px;
   }
 
@@ -208,7 +207,6 @@ footer {
     order: 1;
     border-radius: 0px;
     height: 580px;
-    padding-top: 30px;
     border: 2px blue solid;
   }
   #bloc_image_p {
@@ -225,5 +223,6 @@ footer {
 
   #activite {
     order: 3;
+    padding-left: 3.5%;
   }
 }
