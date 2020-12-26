@@ -41,7 +41,7 @@ main {
   border-radius: 10px;
   width: 61%;
   padding-left: 3.5%;
-  min-height: 50%;
+  min-height: 625px;
 }
 #bloc_image_m {
   display: flex;
@@ -62,7 +62,7 @@ main {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 29%;
-  max-height: 50%;
+  min-height: 625px;
   padding-left: 3.5%;
 }
 #bloc_image_p {
@@ -81,7 +81,7 @@ main {
 #activite {
   border: 1px blue dashed;
   width: 100%;
-  max-height: 50%;
+  min-height: 625px;
   margin-bottom: 4%;
 }
 #bloc_image_a {
@@ -138,4 +138,20 @@ footer {
 #assistance {
   width: 30.9%;
   border: 1px dashed;
+}
+
+@media screen and (max-width: 991px) {
+  #bloc_page{
+    background-color: blue;
+  }
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  #hebergement_m{
+    width: 96.5%;
+  }
+  #populaire{
+    width: 96.5%;
+  }
 }
