@@ -8,17 +8,29 @@ header {
   min-height: 100px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
+  border: 1px dashed;
 }
 #logo {
-  width: 50%;
-  border: 1px dashed;
+  width: 30%;
+  margin-top: 30px;
 }
 #lien {
-  width: 70%;
   border: 1px dashed;
-  text-align: right;
+  width: 33%;
   display: flex;
-  justify-content: flex-end;
+}
+#ancre {
+  width: 70%;
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px red solid;
+}
+#lien_inscire {
+  width: 30%;
+  padding-top: 50px;
+  text-align: center;
+  border: 2px blue solid;
 }
 nav {
   background-color: #deebff;
