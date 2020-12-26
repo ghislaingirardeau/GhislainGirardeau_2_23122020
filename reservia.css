@@ -141,9 +141,7 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-  #bloc_page {
-    background-color: blue;
-  }
+  
   main {
     display: flex;
     flex-direction: column;
