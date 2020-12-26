@@ -48,7 +48,7 @@ main {
   flex-wrap: wrap;
   justify-content: space-between; /* ecart entre image */
   align-content: space-between;
-  height: 70%;
+  height: 437px;
   width: 96%;
 }
 .image_h {
@@ -62,11 +62,11 @@ main {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 29%;
-  min-height: 625px;
+  height: 625px;
   padding-left: 3.5%;
 }
 #bloc_image_p {
-  height: 88%; /* retirer la marge du titre */
+  height: 550px; /* retirer la marge du titre */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -87,7 +87,7 @@ main {
 #bloc_image_a {
   border: 1px red dashed;
   width: 100%;
-  height: 90%;
+  height: 562px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -153,5 +153,13 @@ footer {
   }
   #populaire{
     width: 96.5%;
+    height: 250px;
+    margin-top: 40px;
+  }
+  #bloc_image_p {
+    flex-direction: row;
+  }
+  .image_p{
+    width: 31%;
   }
 }
