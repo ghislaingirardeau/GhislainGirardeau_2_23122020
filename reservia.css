@@ -185,15 +185,26 @@ footer {
   #bloc_page {
     background-color: greenyellow;
   }
+  #hebergement_m {
+    order: 2;
+  }
 
   #bloc_image_m {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: space-between;
-    height: 1255px;
+    height: 1280px;
   }
   .image_h {
     width: 100%;
+    height: 200px;
+  }
+
+  #populaire {
+    order: 1;
+  }
+  #activite {
+    order: 3;
   }
 }
