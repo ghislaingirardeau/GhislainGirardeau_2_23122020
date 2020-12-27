@@ -67,6 +67,10 @@ main {
   border: 4px white solid;
   border-radius: 20px;
 }
+#bloc_image_m, img {
+  width: 100%;
+  border-radius: 20px;
+}
 
 #populaire {
   background-color: #f2f2f2;
