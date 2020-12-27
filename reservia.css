@@ -10,27 +10,25 @@ header {
   margin: auto;
   border: 1px dashed;
 }
-#conteneur_logo{
+#conteneur_logo {
+  /* definr une taille du conteneur pour ajuster les box / aux differents formats mobile */
   width: 67%;
-  background-color: red;
 }
 #logo {
+  /* ajuster le logo / taille conteneur */
   width: 20%;
   margin-top: 30px;
-  border: 2px green solid;
 }
 #ancre {
   width: 20%;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
-  border: 2px red solid;
 }
 #lien_inscire {
   width: 10%;
   padding-top: 50px;
   text-align: center;
-  border: 2px blue solid;
 }
 nav {
   background-color: #deebff;
@@ -91,15 +89,13 @@ main {
   margin-bottom: 5%;
 }
 #activite {
-  border: 1px blue dashed;
   width: 100%;
   min-height: 625px;
   margin-bottom: 4%;
 }
 #bloc_image_a {
-  border: 1px red dashed;
   width: 100%;
-  height: 90%;
+  height: 562px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -153,7 +149,6 @@ footer {
 }
 
 @media screen and (max-width: 991px) {
-  
   main {
     display: flex;
     flex-direction: column;
@@ -174,37 +169,41 @@ footer {
     width: 32%;
   }
 
+  #bloc_image_a {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   #image_a_mobile {
     width: 30%;
-    height: 46%;
+    height: 260px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  
   header {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #conteneur_logo{
+  #conteneur_logo {
     width: 49%;
   }
-  #logo{
+  #logo {
     width: 50%;
   }
-  #ancre{
+  #ancre {
     order: 1;
     width: 100%;
     padding-top: 40px;
     padding-bottom: 10px;
   }
-  #lien_inscire{
+  #lien_inscire {
     width: 50%;
     text-align: right;
   }
 
-  
-  main{
+  main {
     width: 100%;
   }
   #hebergement_m {
@@ -216,7 +215,6 @@ footer {
     flex-direction: column;
     align-content: space-between;
     height: 1280px;
-    border: 2px red solid;
     width: 100%;
   }
   .image_h {
@@ -228,13 +226,13 @@ footer {
     order: 1;
     border-radius: 0px;
     height: 580px;
-    border: 2px blue solid;
+
   }
   #bloc_image_p {
     flex-direction: column;
     align-content: space-between;
     height: 480px;
-    border: 2px red solid;
+
   }
   .image_p {
     width: 100%;
@@ -247,22 +245,20 @@ footer {
     padding-left: 3.5%; /* pour aligner tous mes titres */
     width: 96.5%; /* je retire le padding left de 3.5% */
   }
-  #bloc_image_a{
-    flex-wrap: nowrap;
+  #bloc_image_a {
     height: 1260px;
     width: 100%;
   }
   #image_a_mobile {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-    border: 4px black solid;
+    border: 2px black solid;
     border-radius: 20px;
   }
-  footer{
+  footer {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 3.5%;
     height: 485px;
   }
 }
-
