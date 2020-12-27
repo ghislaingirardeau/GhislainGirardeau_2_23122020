@@ -10,24 +10,24 @@ header {
   margin: auto;
   border: 1px dashed;
 }
-#logo {
-  width: 30%;
-  margin-top: 30px;
+#conteneur_logo{
+  width: 67%;
+  background-color: red;
 }
-#lien {
-  border: 1px dashed;
-  width: 33%;
-  display: flex;
+#logo {
+  width: 20%;
+  margin-top: 30px;
+  border: 2px green solid;
 }
 #ancre {
-  width: 70%;
+  width: 20%;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
   border: 2px red solid;
 }
 #lien_inscire {
-  width: 30%;
+  width: 10%;
   padding-top: 50px;
   text-align: center;
   border: 2px blue solid;
@@ -74,7 +74,7 @@ main {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 29%;
-  height: 625px;
+  max-height: 625px;
   padding-left: 3.5%;
 }
 #bloc_image_p {
@@ -93,7 +93,7 @@ main {
 #activite {
   border: 1px blue dashed;
   width: 100%;
-  height: 625px;
+  min-height: 625px;
   margin-bottom: 4%;
 }
 #bloc_image_a {
@@ -174,9 +174,95 @@ footer {
     width: 32%;
   }
 
-  #image_a_mobile{
+  #image_a_mobile {
     width: 30%;
-  height: 46%;
+    height: 46%;
   }
- 
 }
+
+@media screen and (max-width: 768px) {
+  
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #conteneur_logo{
+    width: 49%;
+  }
+  #logo{
+    width: 50%;
+  }
+  #ancre{
+    order: 1;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 10px;
+  }
+  #lien_inscire{
+    width: 50%;
+    text-align: right;
+  }
+
+  
+  main{
+    width: 100%;
+  }
+  #hebergement_m {
+    order: 2;
+  }
+
+  #bloc_image_m {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 1280px;
+    border: 2px red solid;
+    width: 100%;
+  }
+  .image_h {
+    width: 93%;
+    height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+  }
+
+  #populaire {
+    order: 1;
+    border-radius: 0px;
+    height: 580px;
+    border: 2px blue solid;
+  }
+  #bloc_image_p {
+    flex-direction: column;
+    align-content: space-between;
+    height: 480px;
+    border: 2px red solid;
+  }
+  .image_p {
+    width: 100%;
+    height: 150px; /* (height bloc - ecart image 10px/ecart)/nbre bloc */
+    margin-bottom: 0px;
+  }
+
+  #activite {
+    order: 3;
+    padding-left: 3.5%; /* pour aligner tous mes titres */
+    width: 96.5%; /* je retire le padding left de 3.5% */
+  }
+  #bloc_image_a{
+    flex-wrap: nowrap;
+    height: 1260px;
+    width: 100%;
+  }
+  #image_a_mobile {
+    width: 93%;
+    height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
+    border: 4px black solid;
+    border-radius: 20px;
+  }
+  footer{
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 3.5%;
+    height: 485px;
+  }
+}
+
