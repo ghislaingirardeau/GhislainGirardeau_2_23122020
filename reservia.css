@@ -66,11 +66,26 @@ main {
   height: 43%;
   border: 4px white solid;
   border-radius: 20px;
+  overflow: hidden;
+  position: relative;
 }
 #bloc_image_m, img {
+  background-size: cover;
   width: 100%;
-  border-radius: 20px;
+   /* 195h bloc / 115h img */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
+#chez_amina{
+  margin-top: -110px;
+}
+.image_h p{
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  width: 100%;
+}
+
 
 #populaire {
   background-color: #f2f2f2;
