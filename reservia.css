@@ -10,24 +10,24 @@ header {
   margin: auto;
   border: 1px dashed;
 }
-#logo {
-  width: 30%;
-  margin-top: 30px;
+#conteneur_logo{
+  width: 67%;
+  background-color: red;
 }
-#lien {
-  border: 1px dashed;
-  width: 33%;
-  display: flex;
+#logo {
+  width: 20%;
+  margin-top: 30px;
+  border: 2px green solid;
 }
 #ancre {
-  width: 70%;
+  width: 20%;
   padding-top: 50px;
   display: flex;
   justify-content: space-around;
   border: 2px red solid;
 }
 #lien_inscire {
-  width: 30%;
+  width: 10%;
   padding-top: 50px;
   text-align: center;
   border: 2px blue solid;
