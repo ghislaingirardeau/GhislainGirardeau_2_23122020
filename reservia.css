@@ -121,10 +121,12 @@ span{
   flex-direction: column;
   flex-wrap: wrap; 
 }
+/* creation de deux balise/box a l'interieur pour ajuster plus facilement l'img et le txt
+sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 #image_hotel{
   border-bottom-left-radius: 15%;
   border-top-left-radius: 15%;
-  width: 38%;
+  width: 45%;
   height: 100%;
   overflow: hidden;
   position: relative;
@@ -137,7 +139,7 @@ span{
   height: 170px;
 }
 #description {
-  width: 62%;
+  width: 55%;
 }
 
 
