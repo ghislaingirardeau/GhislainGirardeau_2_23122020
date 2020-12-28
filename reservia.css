@@ -165,9 +165,10 @@ span{
 }
 .image_a_long {
   /* meme attribut pour les 2 images longs */
-  border: 1px dashed;
   width: 24%;
   height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
   overflow: hidden;
   position: relative;
 }
@@ -188,6 +189,8 @@ span{
 .image_a_fort {
   width: 24%;
   height: 54%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
   overflow: hidden;
   position: relative;
 }
@@ -198,6 +201,8 @@ span{
 .image_a_ile {
   width: 24%;
   height: 37%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
   overflow: hidden;
   position: relative;
 }
@@ -212,6 +217,8 @@ span{
 .image_a_notre {
   width: 24%;
   height: 44%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
   overflow: hidden;
   position: relative;
 }
@@ -220,9 +227,10 @@ span{
   position: absolute;
 }
 .image_a_parc {
-  border: 1px dashed;
   width: 24%;
   height: 47%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
   overflow: hidden;
   position: relative;
 }
