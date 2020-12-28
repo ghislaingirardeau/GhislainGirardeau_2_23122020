@@ -218,12 +218,18 @@ span{
 .image_a_notre img {
   width: 100%;
   position: absolute;
-    /* soit 0.66 de ratio */
 }
 .image_a_parc {
   border: 1px dashed;
   width: 24%;
   height: 47%;
+  overflow: hidden;
+  position: relative;
+}
+.image_a_parc img {
+  width: 100%;
+  position: absolute;
+  top: -4px;
 }
 
 footer {
