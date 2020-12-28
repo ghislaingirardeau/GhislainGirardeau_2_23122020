@@ -63,49 +63,38 @@ main {
 }
 #bloc_image_m div {
   width: 29%;
-  height: 43%;
+  min-height: 188px;
   border: 4px white solid;
   border-radius: 20px;
+  /* overflow: hidden; */
   overflow: hidden;
   position: relative;
 }
 #bloc_image_m img {
   width: 100%;
-  height: 67%;
    /* 195h bloc / 115h img + 8% de marge soit img 67% */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin-top: -8%;
+  position: absolute;
+  top: -9%;
 }
 #bloc_image_m p{
+  width: 100%;
   background-color: white;
   height: 45%;
-  margin-top: -2%;
+  position: absolute;
+  top: 50%;
 }
 span{
   font-weight: bold;
   font-size: 1.2em;
 }
 
+#chez_amina{ /* amina a resoudre */
+  position: absolute;
+  top: -20%;
+}
 
-#chez_amina{
-  margin-top: -110px;
-}
-#amina h4 {
-  background-color: white;
-  position: absolute;
-  top: 100px;
-  width: 100%;
-}
-#hotel_mer{
-  margin-top: -40px;
-}
-#la_mer h4 {
-  background-color: white;
-  position: absolute;
-  top: 92px;
-  width: 100%;
-}
 
 
 #populaire {
@@ -121,13 +110,34 @@ span{
   flex-direction: column;
   justify-content: space-between;
 }
-#bloc_image_p div {
+#image_populaire {
   height: 28%;
   width: 87%;
   border: 4px white solid;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
+#image_populaire div{
+  width: 50%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+#bloc_image_p img{
+  background-size: cover;
+  position: absolute;
+  top: -10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 #activite {
   width: 100%;
   min-height: 625px;
@@ -141,13 +151,31 @@ span{
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  position: relative;
 } /* taille d'image differente dans activité */
+
+#bloc_image_a p{
+  background-color: white;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: -18px;
+}
 .image_a_long {
   /* meme attribut pour les 2 images longs */
   border: 1px dashed;
   width: 22.4%;
   height: 100%;
+  overflow: hidden;
+  position: relative;
 }
+.image_a_long img {
+  position: absolute;
+  left: -300px;
+  width: 726px;
+  height: 600px;
+}
+
 .image_a_fort {
   border: 1px dashed;
   width: 22.4%;
