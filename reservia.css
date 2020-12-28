@@ -61,7 +61,7 @@ main {
   height: 437px;
   width: 96%;
 }
-.image_h {
+#bloc_image_m div {
   width: 29%;
   height: 43%;
   border: 4px white solid;
@@ -79,7 +79,7 @@ main {
 #chez_amina{
   margin-top: -110px;
 }
-.image_h p{
+#bloc_image_m div p{
   background-color: white;
   position: absolute;
   top: 110px;
@@ -100,7 +100,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.image_p {
+#bloc_image_p div {
   height: 28%;
   width: 87%;
   border: 4px white solid;
@@ -184,7 +184,7 @@ footer {
     flex-direction: row;
     padding-right: 30px;
   }
-  .image_p {
+  #bloc_image_p div {
     width: 32%;
   }
 
@@ -194,7 +194,7 @@ footer {
     justify-content: space-between;
   }
 
-  #image_a_mobile {
+  #bloc_image_a div {
     width: 30%;
     height: 260px;
   }
@@ -236,7 +236,7 @@ footer {
     height: 1280px;
     width: 100%;
   }
-  .image_h {
+  #bloc_image_m div {
     width: 93%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
@@ -253,7 +253,7 @@ footer {
     height: 480px;
 
   }
-  .image_p {
+  #bloc_image_p div {
     width: 100%;
     height: 150px; /* (height bloc - ecart image 10px/ecart)/nbre bloc */
     margin-bottom: 0px;
@@ -268,7 +268,7 @@ footer {
     height: 1260px;
     width: 100%;
   }
-  #image_a_mobile {
+  #bloc_image_a div {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border: 2px black solid;
