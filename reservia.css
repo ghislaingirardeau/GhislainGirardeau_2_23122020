@@ -124,8 +124,8 @@ span{
 /* creation de deux balise/box a l'interieur pour ajuster plus facilement l'img et le txt
 sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 #image_hotelsoleil{
-  border-bottom-left-radius: 15%;
-  border-top-left-radius: 15%;
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
   width: 45%;
   height: 100%;
   overflow: hidden;
@@ -139,14 +139,29 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   height: 170px;
 }
 #image_chambrehote{
-  border-bottom-left-radius: 15%;
-  border-top-left-radius: 15%;
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
   width: 45%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
 #image_chambrehote img {
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  width: 222px;
+  height: 170px;
+}
+#image_hoteltoutbleu{
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#image_hoteltoutbleu img {
   position: absolute;
   top: -10px;
   left: -60px;
