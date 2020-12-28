@@ -185,7 +185,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 }
 #bloc_image_a {
   width: 100%;
-  height: 445px;
+  min-height: 445px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
