@@ -186,7 +186,6 @@ span{
 }
 
 .image_a_fort {
-  border: 1px dashed;
   width: 24%;
   height: 54%;
   overflow: hidden;
@@ -197,10 +196,19 @@ span{
   top: -150px;
 }
 .image_a_ile {
-  border: 1px dashed;
   width: 24%;
   height: 37%;
+  overflow: hidden;
+  position: relative;
 }
+.image_a_ile img{
+  position: absolute;
+  left: -10px;
+  top: -30px;
+  width: 348px;
+  height: 229px;
+}
+
 .image_a_notre {
   border: 1px dashed;
   width: 24%;
