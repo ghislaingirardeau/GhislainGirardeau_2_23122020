@@ -119,24 +119,27 @@ span{
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
-#image_populaire div{
-  width: 50%;
+#image_hotel{
+  border-bottom-left-radius: 15%;
+  border-top-left-radius: 15%;
+  width: 38%;
   height: 100%;
-  position: relative;
   overflow: hidden;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  position: relative;
 }
-
-#bloc_image_p img{
-  background-size: cover;
+#image_hotel img {
   position: absolute;
   top: -10px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  left: -60px;
+  width: 222px;
+  height: 170px;
 }
+#description {
+  width: 62%;
+}
+
 
 #activite {
   width: 100%;
