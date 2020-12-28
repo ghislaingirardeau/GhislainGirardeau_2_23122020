@@ -69,20 +69,41 @@ main {
   overflow: hidden;
   position: relative;
 }
-#bloc_image_m, img {
-  background-size: cover;
+#bloc_image_m img {
   width: 100%;
-   /* 195h bloc / 115h img */
+  height: 67%;
+   /* 195h bloc / 115h img + 8% de marge soit img 67% */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin-top: -8%;
 }
+#bloc_image_m p{
+  background-color: white;
+  height: 45%;
+  margin-top: -2%;
+}
+span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+
 #chez_amina{
   margin-top: -110px;
 }
-#bloc_image_m div p{
+#amina h4 {
   background-color: white;
   position: absolute;
-  top: 110px;
+  top: 100px;
+  width: 100%;
+}
+#hotel_mer{
+  margin-top: -40px;
+}
+#la_mer h4 {
+  background-color: white;
+  position: absolute;
+  top: 92px;
   width: 100%;
 }
 
