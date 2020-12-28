@@ -66,13 +66,11 @@ main {
   min-height: 188px;
   border: 4px white solid;
   border-radius: 20px;
-  /* overflow: hidden; */
-  overflow: hidden;
+  overflow: hidden; /* pour masquer le rest de límage */
   position: relative;
 }
 #bloc_image_m img {
   width: 100%;
-   /* 195h bloc / 115h img + 8% de marge soit img 67% */
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   position: absolute;
@@ -81,7 +79,7 @@ main {
 #bloc_image_m p{
   width: 100%;
   background-color: white;
-  height: 45%;
+  height: 46%;
   position: absolute;
   top: 50%;
 }
@@ -90,11 +88,17 @@ span{
   font-size: 1.2em;
 }
 
-#chez_amina{ /* amina a resoudre */
+#bloc_image_m #chez_amina{ /* appeler le bloc pour ensuite la balise a l'interieur */
   position: absolute;
-  top: -20%;
+  top: -110px;
 }
-
+#bloc_image_m #hotel_mer{ /* appeler le bloc pour ensuite la balise a l'interieur */
+  position: absolute;
+  top: -45px;
+}
+#bloc_image_m #le_panier{
+  height: 72%;
+}
 
 
 #populaire {
