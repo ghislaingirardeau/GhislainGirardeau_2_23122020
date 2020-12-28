@@ -166,36 +166,49 @@ span{
 .image_a_long {
   /* meme attribut pour les 2 images longs */
   border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 100%;
   overflow: hidden;
   position: relative;
 }
-.image_a_long img {
+#vieux_port {
   position: absolute;
   left: -300px;
+  width: 726px;
+  height: 600px;
+}
+#calanques{
+  position: absolute;
+  left: -200px;
+  top: -100px;
   width: 726px;
   height: 600px;
 }
 
 .image_a_fort {
   border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 54%;
+  overflow: hidden;
+  position: relative;
+}
+.image_a_fort img{
+  position: absolute;
+  top: -150px;
 }
 .image_a_ile {
   border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 37%;
 }
 .image_a_notre {
   border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 44%;
 }
 .image_a_parc {
   border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 47%;
 }
 
