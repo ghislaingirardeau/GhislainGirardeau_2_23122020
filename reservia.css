@@ -287,16 +287,20 @@ footer {
 }
 #a_propos {
   width: 30.9%;
-  border: 1px dashed;
 }
 #nos_herbegements {
   width: 30.9%;
-  border: 1px dashed;
 }
 #assistance {
   width: 30.9%;
-  border: 1px dashed;
 }
+
+h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 30px;
+}
+
 
 @media screen and (max-width: 991px) {
   main {
