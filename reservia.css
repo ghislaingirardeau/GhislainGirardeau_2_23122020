@@ -1,7 +1,7 @@
 #bloc_page {
   /* width en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
   border: 1px black dashed;
-  width: 1440px;/* sauf pour le bloc image en px pour un rendu plus proche de l'image */
+  width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
   height: 1884px;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 header {
@@ -60,13 +60,14 @@ main {
   flex-wrap: wrap;
   justify-content: space-between; /* ecart entre image */
   align-content: space-between;
-  height: 437px;
+  min-height: 437px;
   width: 96%;
 }
 #bloc_image_m div {
   width: 29%;
   min-height: 188px;
   border: 4px white solid;
+  box-shadow: 5px 5px 3px #f2f2f2;
   border-radius: 20px;
   overflow: hidden; /* pour masquer le rest de límage */
   position: relative;
@@ -78,36 +79,37 @@ main {
   position: absolute;
   top: -9%;
 }
-#bloc_image_m p{
+#bloc_image_m p {
   width: 100%;
   background-color: white;
   height: 46%;
   position: absolute;
   top: 50%;
 }
-span{
+span {
   font-weight: bold;
   font-size: 1.2em;
 }
 
-#bloc_image_m #chez_amina{ /* appeler le bloc pour ensuite la balise a l'interieur */
+#bloc_image_m #chez_amina {
+  /* appeler le bloc pour ensuite la balise a l'interieur */
   position: absolute;
   top: -110px;
 }
-#bloc_image_m #hotel_mer{ /* appeler le bloc pour ensuite la balise a l'interieur */
+#bloc_image_m #hotel_mer {
+  /* appeler le bloc pour ensuite la balise a l'interieur */
   position: absolute;
   top: -45px;
 }
-#bloc_image_m #le_panier{
+#bloc_image_m #le_panier {
   height: 72%;
 }
-
 
 #populaire {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 29%;
-  max-height: 625px;
+  min-height: 625px;
   padding-left: 3.5%;
 }
 #bloc_image_p {
@@ -125,11 +127,11 @@ span{
   margin-bottom: 5%;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 /* creation de deux balise/box a l'interieur pour ajuster plus facilement l'img et le txt
 sinon : soit l'img reste devant le txt et prends 50% de la largeur */
-#image_hotelsoleil{
+#bloc_image_p #image_hotelsoleil {
   border-bottom-left-radius: 12%;
   border-top-left-radius: 12%;
   width: 45%;
@@ -140,11 +142,11 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 #image_hotelsoleil img {
   position: absolute;
   top: -10px;
-  left: -60px;
-  width: 222px;
-  height: 170px;
+  left: -50px;
+  width: 252px;
+  height: 166px;
 }
-#image_chambrehote{
+#bloc_image_p #image_chambrehote {
   border-bottom-left-radius: 12%;
   border-top-left-radius: 12%;
   width: 45%;
@@ -159,7 +161,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   width: 222px;
   height: 170px;
 }
-#image_hoteltoutbleu{
+#bloc_image_p #image_hoteltoutbleu {
   border-bottom-left-radius: 12%;
   border-top-left-radius: 12%;
   width: 45%;
@@ -174,10 +176,11 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   width: 170px;
   height: 250px;
 }
-#description { /* identique pour les 3 blocs */
-  width: 55%;
+#description {
+  /* identique pour les 3 blocs */
+  width: 45%;
+  padding-left: 25px;
 }
-
 
 #activite {
   width: 100%;
@@ -196,7 +199,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   position: relative;
 } /* taille d'image differente dans activité */
 
-#bloc_image_a p{
+#bloc_image_a p {
   background-color: white;
   height: 55px;
   width: 100%;
@@ -215,16 +218,17 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 }
 #vieux_port {
   position: absolute;
-  left: -300px;
+  top: -130px;
+  left: -200px;
   width: 726px;
   height: 600px;
 }
-#calanques{
+#calanques {
   position: absolute;
   left: -200px;
   top: -100px;
-  width: 726px;
-  height: 600px;
+  width: 766px;
+  height: 505px;
 }
 
 .image_a_fort {
@@ -235,7 +239,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   overflow: hidden;
   position: relative;
 }
-.image_a_fort img{
+.image_a_fort img {
   position: absolute;
   top: -150px;
 }
@@ -247,7 +251,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   overflow: hidden;
   position: relative;
 }
-.image_a_ile img{
+.image_a_ile img {
   position: absolute;
   left: -10px;
   top: -30px;
@@ -287,6 +291,9 @@ footer {
   display: flex;
   justify-content: center;
 }
+footer div {
+  margin-top: 10px;
+}
 #a_propos {
   width: 30.9%;
 }
@@ -300,9 +307,11 @@ footer {
 h3 {
   font-weight: bold;
   font-size: 1.5em;
-  margin-top: 30px;
+  width: 360px;
 }
-
+footer p {
+  width: 360px;
+}
 
 @media screen and (max-width: 991px) {
   main {
@@ -339,6 +348,10 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+  #bloc_page {
+    width: 375px;
+    height: 4550px;
+  }
   header {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -352,12 +365,15 @@ h3 {
   #ancre {
     order: 1;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   #lien_inscire {
     width: 50%;
     text-align: right;
+  }
+  nav {
+    height: 520px;
   }
 
   main {
@@ -365,36 +381,50 @@ h3 {
   }
   #hebergement_m {
     order: 2;
+    border-radius: unset;
+    background-color: unset;
   }
-
   #bloc_image_m {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    height: 1280px;
+    height: 1250px;
     width: 100%;
   }
   #bloc_image_m div {
     width: 93%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
+  #bloc_image_m img {
+    top: -55px; /* recentrer les 3 images */
+  }
+  #bloc_image_m #chez_amina {
+    top: -200px;
+  }
+  #bloc_image_m #hotel_mer {
+    top: -100px;
+  }
+  #bloc_image_m #le_panier {
+    height: 100%;
+  }
 
   #populaire {
     order: 1;
     border-radius: 0px;
-    height: 580px;
-
+    height: 560px;
   }
   #bloc_image_p {
     flex-direction: column;
     align-content: space-between;
-    height: 480px;
-
+    height: 460px;
   }
   #bloc_image_p div {
     width: 100%;
-    height: 150px; /* (height bloc - ecart image 10px/ecart)/nbre bloc */
-    margin-bottom: 0px;
+    height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+  }
+  #bloc_image_p #description {
+    width: 160px;
+    padding-left: 25px;
   }
 
   #activite {
@@ -409,9 +439,32 @@ h3 {
   #bloc_image_a div {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-    border: 2px black solid;
     border-radius: 20px;
   }
+  #vieux_port {
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    width: 350px;
+    height: 231px;
+  }
+  #calanques {
+    position: absolute;
+    left: -40px;
+    top: -45px;
+    width: 426px;
+    height: 281px;
+  }
+  .image_a_fort img {
+    position: absolute;
+    top: -165px;
+  }
+  .image_a_ile img {
+    position: absolute;
+    left: 0px;
+    top: -10px;
+  }
+
   footer {
     flex-direction: column;
     justify-content: space-between;
