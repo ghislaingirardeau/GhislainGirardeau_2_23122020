@@ -113,6 +113,9 @@ span {
   min-height: 625px;
   padding-left: 3.5%;
 }
+#populaire i{
+  margin-left: 100px;
+}
 #bloc_image_p {
   height: 550px; /* retirer la marge du titre */
   display: flex;
