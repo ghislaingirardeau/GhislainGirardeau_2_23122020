@@ -3,6 +3,7 @@
   border: 1px black dashed;
   width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
   height: 1884px;
+  font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 header {
   display: flex;
@@ -229,6 +230,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   top: -100px;
   width: 766px;
   height: 505px;
+  filter: brightness(150%);
 }
 
 .image_a_fort {
