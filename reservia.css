@@ -61,12 +61,45 @@ main {
   height: 437px;
   width: 96%;
 }
-.image_h {
+#bloc_image_m div {
   width: 29%;
-  height: 43%;
+  min-height: 188px;
   border: 4px white solid;
   border-radius: 20px;
+  overflow: hidden; /* pour masquer le rest de límage */
+  position: relative;
 }
+#bloc_image_m img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: absolute;
+  top: -9%;
+}
+#bloc_image_m p{
+  width: 100%;
+  background-color: white;
+  height: 46%;
+  position: absolute;
+  top: 50%;
+}
+span{
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+#bloc_image_m #chez_amina{ /* appeler le bloc pour ensuite la balise a l'interieur */
+  position: absolute;
+  top: -110px;
+}
+#bloc_image_m #hotel_mer{ /* appeler le bloc pour ensuite la balise a l'interieur */
+  position: absolute;
+  top: -45px;
+}
+#bloc_image_m #le_panier{
+  height: 72%;
+}
+
 
 #populaire {
   background-color: #f2f2f2;
@@ -81,52 +114,169 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-.image_p {
+#image_populaire {
   height: 28%;
   width: 87%;
   border: 4px white solid;
+  background-color: white;
   border-radius: 20px;
   margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; 
 }
+/* creation de deux balise/box a l'interieur pour ajuster plus facilement l'img et le txt
+sinon : soit l'img reste devant le txt et prends 50% de la largeur */
+#image_hotelsoleil{
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#image_hotelsoleil img {
+  position: absolute;
+  top: -10px;
+  left: -60px;
+  width: 222px;
+  height: 170px;
+}
+#image_chambrehote{
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#image_chambrehote img {
+  position: absolute;
+  top: -10px;
+  left: -43px;
+  width: 222px;
+  height: 170px;
+}
+#image_hoteltoutbleu{
+  border-bottom-left-radius: 12%;
+  border-top-left-radius: 12%;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#image_hoteltoutbleu img {
+  position: absolute;
+  top: -40px;
+  left: -20px;
+  width: 170px;
+  height: 250px;
+}
+#description { /* identique pour les 3 blocs */
+  width: 55%;
+}
+
+
 #activite {
   width: 100%;
-  min-height: 625px;
+  min-height: 510px;
   margin-bottom: 4%;
+  margin-top: 4%;
 }
 #bloc_image_a {
   width: 100%;
-  height: 562px;
+  height: 445px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
+  position: relative;
 } /* taille d'image differente dans activité */
+
+#bloc_image_a p{
+  background-color: white;
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  bottom: -18px;
+  padding-left: 20px;
+}
 .image_a_long {
   /* meme attribut pour les 2 images longs */
-  border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 100%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
 }
+#vieux_port {
+  position: absolute;
+  left: -300px;
+  width: 726px;
+  height: 600px;
+}
+#calanques{
+  position: absolute;
+  left: -200px;
+  top: -100px;
+  width: 726px;
+  height: 600px;
+}
+
 .image_a_fort {
-  border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 54%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
+}
+.image_a_fort img{
+  position: absolute;
+  top: -150px;
 }
 .image_a_ile {
-  border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 37%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
 }
+.image_a_ile img{
+  position: absolute;
+  left: -10px;
+  top: -30px;
+  width: 348px; /* soit 0.66 de ratio */
+  height: 229px;
+}
+
 .image_a_notre {
-  border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 44%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
+}
+.image_a_notre img {
+  width: 100%;
+  position: absolute;
 }
 .image_a_parc {
-  border: 1px dashed;
-  width: 22.4%;
+  width: 24%;
   height: 47%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
+}
+.image_a_parc img {
+  width: 100%;
+  position: absolute;
+  top: -4px;
 }
 
 footer {
@@ -165,7 +315,7 @@ footer {
     flex-direction: row;
     padding-right: 30px;
   }
-  .image_p {
+  #bloc_image_p div {
     width: 32%;
   }
 
@@ -173,9 +323,10 @@ footer {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    height: 550px; /* a ajuster precisement */
   }
 
-  #image_a_mobile {
+  #bloc_image_a div {
     width: 30%;
     height: 260px;
   }
@@ -217,7 +368,7 @@ footer {
     height: 1280px;
     width: 100%;
   }
-  .image_h {
+  #bloc_image_m div {
     width: 93%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
@@ -234,7 +385,7 @@ footer {
     height: 480px;
 
   }
-  .image_p {
+  #bloc_image_p div {
     width: 100%;
     height: 150px; /* (height bloc - ecart image 10px/ecart)/nbre bloc */
     margin-bottom: 0px;
@@ -249,7 +400,7 @@ footer {
     height: 1260px;
     width: 100%;
   }
-  #image_a_mobile {
+  #bloc_image_a div {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border: 2px black solid;
