@@ -451,9 +451,18 @@ footer p {
   #calanques {
     position: absolute;
     left: -40px;
-    top: -40px;
+    top: -45px;
     width: 426px;
     height: 281px;
+  }
+  .image_a_fort img {
+    position: absolute;
+    top: -165px;
+  }
+  .image_a_ile img {
+    position: absolute;
+    left: 0px;
+    top: -10px;
   }
 
   footer {
