@@ -67,6 +67,7 @@ main {
   width: 29%;
   min-height: 188px;
   border: 4px white solid;
+  box-shadow: 5px 5px 3px #f2f2f2;
   border-radius: 20px;
   overflow: hidden; /* pour masquer le rest de límage */
   position: relative;
@@ -141,9 +142,9 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 #image_hotelsoleil img {
   position: absolute;
   top: -10px;
-  left: -60px;
-  width: 222px;
-  height: 170px;
+  left: -50px;
+  width: 252px;
+  height: 166px;
 }
 #bloc_image_p #image_chambrehote {
   border-bottom-left-radius: 12%;
@@ -177,7 +178,8 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 }
 #description {
   /* identique pour les 3 blocs */
-  width: 55%;
+  width: 45%;
+  padding-left: 25px;
 }
 
 #activite {
@@ -405,11 +407,6 @@ footer p {
     height: 100%;
   }
 
-
-
-
-
-
   #populaire {
     order: 1;
     border-radius: 0px;
@@ -425,7 +422,8 @@ footer p {
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
   #bloc_image_p #description {
-    width: 190px;
+    width: 160px;
+    padding-left: 25px;
   }
 
   #activite {
