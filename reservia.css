@@ -218,7 +218,8 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 }
 #vieux_port {
   position: absolute;
-  left: -300px;
+  top: -130px;
+  left: -200px;
   width: 726px;
   height: 600px;
 }
@@ -226,8 +227,8 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
   position: absolute;
   left: -200px;
   top: -100px;
-  width: 726px;
-  height: 600px;
+  width: 766px;
+  height: 505px;
 }
 
 .image_a_fort {
@@ -440,6 +441,21 @@ footer p {
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border-radius: 20px;
   }
+  #vieux_port {
+    position: absolute;
+    top: -0px;
+    left: 0px;
+    width: 350px;
+    height: 231px;
+  }
+  #calanques {
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    width: 426px;
+    height: 281px;
+  }
+
   footer {
     flex-direction: column;
     justify-content: space-between;
