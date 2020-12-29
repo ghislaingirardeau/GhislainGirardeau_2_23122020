@@ -34,7 +34,7 @@ header {
   text-align: center;
 }
 nav {
-  background-color: #deebff;
+  
   border: 1px dashed;
   min-height: 320px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
