@@ -1,6 +1,8 @@
 #bloc_page {
-  /* widht en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
+  /* width en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
   border: 1px black dashed;
+  width: 1440px;/* sauf pour le bloc image en px pour un rendu plus proche de l'image */
+  height: 1884px;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 header {
   display: flex;
@@ -281,7 +283,7 @@ sinon : soit l'img reste devant le txt et prends 50% de la largeur */
 
 footer {
   background-color: #f2f2f2;
-  min-height: 220px;
+  min-height: 214px;
   display: flex;
   justify-content: center;
 }
