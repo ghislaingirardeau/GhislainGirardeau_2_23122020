@@ -6,6 +6,7 @@
   font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 
+/* bloc mise en forme generale du texte */
 h1 {
   font-weight: bold;
   font-size: 1.6em;
@@ -18,6 +19,10 @@ h3 {
   font-size: 1em;
   font-weight: bold;
 }
+article, section a {
+  color: black;
+}
+/* fin bloc mise en forme */
 
 header {
   display: flex;
@@ -62,6 +67,8 @@ header {
   text-align: center;
   color: #0065FC;
   font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 nav {
   border: 1px dashed;
@@ -168,9 +175,6 @@ p {
   background-color: white;
   border-radius: 20px;
   margin-bottom: 5%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   overflow: hidden;
 }
 /* utilisation flex box a l'interieur pour ajuster plus facilement l'img et le txt*/
@@ -182,6 +186,7 @@ p {
 .attribut_texte_populaire {
   margin-left: 10px;
   width: 50%;
+  float: right;
 }
 
 
@@ -304,10 +309,16 @@ footer div {
 #assistance {
   width: 30.9%;
 }
-
-footer p {
+footer ul {
+  margin-top: -15px;
+  }
+footer li {
   width: 360px;
-  line-height: 15px;
+  line-height: 30px;
+  list-style-type: none;
+  display: inline-block;
+  margin-left: -40px;
+  text-align: left;
 }
 h4 {
   font-size: 1.3em;
