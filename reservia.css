@@ -76,7 +76,24 @@ nav {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-
+/* mise en forme icone */
+.contour_economique{
+  width: 30%;
+  border: solid 2px black;
+}
+.contour_economique p {
+float: right;
+}
+i[title="icone"]{
+color: #0065FC;
+text-align: center;
+width: 50px;
+height: 50px;
+border-radius: 30px;
+background-color: #DEEBFF;
+vertical-align: middle;
+}
+/* fin */
 main {
   display: flex;
   flex-wrap: wrap;
