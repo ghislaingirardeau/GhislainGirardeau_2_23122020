@@ -66,44 +66,42 @@ main {
 }
 #bloc_image_m article {
   width: 29%;
-  min-height: 188px;
+  height: 188px;
   border: 4px white solid;
   box-shadow: 5px 5px 3px #f2f2f2;
   border-radius: 20px;
-  overflow: hidden; /* pour masquer le rest de límage */
+  overflow: hidden; /* pour masquer le rest de l'image */
   position: relative;
 }
 #bloc_image_m img {
   width: 100%;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  position: absolute;
-  top: -9%;
+  object-fit: contain;
+  object-position: 0 -15px;
 }
 #bloc_image_m div {
   width: 100%;
   background-color: white;
-  height: 50%;
+  height: 77px;
   position: absolute;
-  top: 50%;
+  top: 60%;
 }
-span {
-  font-weight: bold;
-  font-size: 1.2em;
+.attribut_texte h4 {
+  margin-top: 8px;
+}
+h4, p{
+  line-height: 5px;
+  margin-left: 10px;
 }
 
 #bloc_image_m #chez_amina {
   /* appeler le bloc pour ensuite la balise a l'interieur */
-  position: absolute;
-  top: -110px;
+  object-fit: contain;
+  object-position: 0 -110px;
 }
 #bloc_image_m #hotel_mer {
   /* appeler le bloc pour ensuite la balise a l'interieur */
-  position: absolute;
-  top: -45px;
-}
-#bloc_image_m #le_panier {
-  height: 72%;
+  object-fit: contain;
+  object-position: 0 -45px;
 }
 
 #populaire {
