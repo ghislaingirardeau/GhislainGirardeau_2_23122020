@@ -23,7 +23,7 @@
             <a href="#HM">Hébergements</a>
             <a href="#AM">Activités</a>
         </div>
-        <a id="lien_inscire">S'inscire</a><!-- media queries : changer ordre, inscrire ordre  -->
+        <a href="#" id="lien_inscire">S'inscire</a><!-- media queries : changer ordre, inscrire ordre  -->
         </div>
     </header>
 
@@ -110,32 +110,32 @@
             <h2>Les plus populaires <i class="fas fa-chart-line"></i></h2>
             <div id="bloc_image_p">
                 <!-- meme css pour les div du groupe -->
-                <section id="image_populaire">
+                <section id="image_populaire"><a href="#">
                     <img src="/element/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt=""
                         id="image_hotelsoleil" class="attribut_image_populaire" />
                     <div class="attribut_texte_populaire">
                         <h3>Hôtel Le soleil du matin</h3>
                         <p>Nuit à partir de 128€</p>
                         <p>Notation</p>
-                    </div>
+                    </div></a>
                 </section>
-                <section id="image_populaire">
+                <section id="image_populaire"><a href="#">
                     <img src="/element/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt=""
                         id="image_chambrehote" class="attribut_image_populaire"/>
                     <div class="attribut_texte_populaire">
                         <h3>Au coeur de l'eau Chambres d'hotes</h3>
                         <p>Nuit à partir de 71€</p>
                         <p>Notation</p>
-                    </div>
+                    </div></a>
                 </section>
-                <section id="image_populaire">
+                <section id="image_populaire"><a href="#">
                     <img src="/element/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt=""
                         id="image_hoteltoutbleu" class="attribut_image_populaire"/>
                     <div class="attribut_texte_populaire">
                         <h3>Hôtel Tout bleu et Blanc</h3>
                         <p>Nuit à partir de 68€</p>
                         <p>Notation</p>
-                    </div>
+                    </div></a>
                 </section>
             </div>
         </aside>
@@ -180,19 +180,25 @@
         <!-- Construction en 3 block, display flex, CSS identique -->
         <div id="a_propos">
             <h4>A propos</h4>
-            <p>Foctionnement du site</p>
-            <p>Conditions générales de vente</p>
-            <p>Données et confidentialité</p>
+            <ul>
+            <li>Foctionnement du site</li>
+            <li>Conditions générales de vente</li>
+            <li>Données et confidentialité</li>
+        </ul>
         </div>
         <div id="nos_herbegements">
             <h4>Nos hébergements</h4>
-            <p>Charte de qualité</p>
-            <p>Soumettre votre hôtel</p>
+            <ul>
+            <li>Charte de qualité</li>
+            <li>Soumettre votre hôtel</li>
+        </ul>
         </div>
         <div id="assistance">
             <h4>Assistance</h4>
-            <p>Centre d'aide</p>
-            <p>Nous contacter</p>
+            <ul>
+            <li>Centre d'aide</li>
+            <li>Nous contacter</li>
+        </ul>
         </div>
     </footer>
 
