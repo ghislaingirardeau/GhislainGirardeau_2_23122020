@@ -1,6 +1,6 @@
 #bloc_page {
   /* width en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
-  border: 1px black dashed;
+  
   width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
   height: 1884px;
   font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
@@ -25,7 +25,7 @@ header {
   min-height: 100px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
-  border: 1px dashed;
+  
 }
 #conteneur_logo {
   /* definr une taille du conteneur pour ajuster les box / aux differents formats mobile */
@@ -38,10 +38,23 @@ header {
 }
 #ancre {
   width: 20%;
-  padding-top: 50px;
   display: flex;
   justify-content: space-around;
+  
 }
+#ancre a {
+  text-decoration: none;
+  color: black;
+  padding-top: 50px;
+  width: 50%; /* egaliser la largeur pour avoir une bordure de meme longueur */
+  text-align: center; /* puis centre le texte */
+}
+#ancre a:hover{
+  color: #0065FC ;
+  border-top: 2px #0065FC solid;
+  padding-top: -30px;
+} 
+
 #lien_inscire {
   width: 10%;
   padding-top: 50px;
