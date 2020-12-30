@@ -78,7 +78,7 @@ main {
   object-fit: contain;
   object-position: 0 -15px;
 }
-#bloc_image_m div {
+#bloc_image_m .attribut_texte {
   width: 100%;
   background-color: white;
   height: 77px;
@@ -88,7 +88,7 @@ main {
 .attribut_texte h4 {
   margin-top: 8px;
 }
-h4, p{
+.attribut_texte h4, p{
   line-height: 5px;
   margin-left: 10px;
 }
