@@ -150,18 +150,7 @@ p {
   overflow: hidden;
 }
 /* utilisation flex box a l'interieur pour ajuster plus facilement l'img et le txt*/
-#image_hotelsoleil {
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
-}
-#image_chambrehote {
-  width: 45%;
-  height: 100%;
-  object-fit: cover;
-}
-
-#image_hoteltoutbleu {
+.attribut_image{ /* chaque image a le meme format dans sa boite */
   width: 45%;
   height: 100%;
   object-fit: cover;
@@ -170,6 +159,7 @@ p {
   margin-left: 10px;
   width: 50%;
 }
+
 
 #activite {
   width: 100%;
