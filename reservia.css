@@ -5,6 +5,20 @@
   height: 1884px;
   font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
+
+h1 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1.6em;
+}
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -34,7 +48,6 @@ header {
   text-align: center;
 }
 nav {
-  
   border: 1px dashed;
   min-height: 320px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
@@ -86,10 +99,11 @@ main {
   position: absolute;
   top: 60%;
 }
-.attribut_texte_h h4 {
-  margin-top: 8px;
+.attribut_texte_h h3 {
+  margin-top: 10px;
 }
-.attribut_texte_h h4, p{
+.attribut_texte_h h3,
+p {
   line-height: 5px;
 }
 
@@ -111,8 +125,10 @@ main {
   min-height: 625px;
   padding-left: 3.5%;
 }
-#populaire i{
-  margin-left: 100px;
+#populaire i {
+  /* float / au texte pour une adaptation en responsive */
+  float: right;
+  margin-right: 40px;
 }
 #bloc_image_p {
   height: 550px; /* retirer la marge du titre */
@@ -120,7 +136,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-#image_populaire { /* bloc incluant img et description */
+#image_populaire {
+  /* bloc incluant img et description */
   height: 28%;
   width: 87%;
   border: 4px white solid;
@@ -277,13 +294,13 @@ footer div {
   width: 30.9%;
 }
 
-h3 {
-  font-weight: bold;
-  font-size: 1.5em;
-  width: 360px;
-}
 footer p {
   width: 360px;
+  line-height: 15px;
+}
+h4 {
+  font-size: 1.3em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 991px) {
