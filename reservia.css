@@ -78,19 +78,19 @@ main {
   object-fit: contain;
   object-position: 0 -15px;
 }
-#bloc_image_m .attribut_texte {
+.attribut_texte_h {
   width: 100%;
   background-color: white;
   height: 77px;
+  padding-left: 10px;
   position: absolute;
   top: 60%;
 }
-.attribut_texte h4 {
+.attribut_texte_h h4 {
   margin-top: 8px;
 }
-.attribut_texte h4, p{
+.attribut_texte_h h4, p{
   line-height: 5px;
-  margin-left: 10px;
 }
 
 #bloc_image_m #chez_amina {
@@ -120,7 +120,7 @@ main {
   flex-direction: column;
   justify-content: space-between;
 }
-#image_populaire {
+#image_populaire { /* bloc incluant img et description */
   height: 28%;
   width: 87%;
   border: 4px white solid;
@@ -130,39 +130,21 @@ main {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 /* creation de deux balise/box a l'interieur pour ajuster plus facilement l'img et le txt
 sinon : soit l'img reste devant le txt et prends 50% de la largeur */
-#bloc_image_p #image_hotelsoleil {
-  border-bottom-left-radius: 12%;
-  border-top-left-radius: 12%;
+#image_hotelsoleil {
   width: 45%;
   height: 100%;
-  overflow: hidden;
-  position: relative;
+  object-fit: cover;
 }
-#image_hotelsoleil img {
-  position: absolute;
-  top: -10px;
-  left: -50px;
-  width: 252px;
-  height: 166px;
-}
-#bloc_image_p #image_chambrehote {
-  border-bottom-left-radius: 12%;
-  border-top-left-radius: 12%;
+#image_chambrehote {
   width: 45%;
   height: 100%;
-  overflow: hidden;
-  position: relative;
+  object-fit: cover;
 }
-#image_chambrehote img {
-  position: absolute;
-  top: -10px;
-  left: -43px;
-  width: 222px;
-  height: 170px;
-}
+
 #bloc_image_p #image_hoteltoutbleu {
   border-bottom-left-radius: 12%;
   border-top-left-radius: 12%;
