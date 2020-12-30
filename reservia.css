@@ -117,6 +117,14 @@ p {
   object-fit: contain;
   object-position: 0 -45px;
 }
+.bouton_plus{
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-top: 40px;
+  font-size: 1.1em;
+}
 
 #populaire {
   background-color: #f2f2f2;
