@@ -79,6 +79,8 @@ nav {
 #bloc_filtre{
   display: flex;
   flex-direction: row;
+  margin-bottom: 35px;
+  margin-top: 35px;
 }
 #bloc_filtre em{
   font-weight: bold;
@@ -111,6 +113,17 @@ font-size: 1.1em;
 position: absolute;
 left: -2px;
 top: -2px;
+}
+
+data i { /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
+  color: #0065FC;
+  width: 30px;
+  height: 25px;
+  text-align: center;
+  border: solid 2px #f2f2f2;
+  border-radius: 30px;
+  padding-top: 5px;
+  margin-right: 20px;
 }
 /* fin */
 main {
