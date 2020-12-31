@@ -23,14 +23,13 @@ article, section a {
   color: black;
 }
 /* fin bloc mise en forme */
-
+/* Mise en forme header */
 header {
   display: flex;
   justify-content: space-between;
   min-height: 100px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
-  
 }
 #conteneur_logo {
   /* definr une taille du conteneur pour ajuster les box / aux differents formats mobile */
@@ -45,7 +44,6 @@ header {
   width: 20%;
   display: flex;
   justify-content: space-around;
-  
 }
 #ancre a {
   font-size: 1.1em;
@@ -60,7 +58,6 @@ header {
   border-top: 3px #0065FC solid;
   padding-top: 47px; /* pour annuler le recul bottom de 3px au survol */
 } 
-
 #lien_inscire {
   width: 10%;
   padding-top: 50px;
@@ -70,6 +67,8 @@ header {
   font-size: 1.1em;
   text-decoration: none;
 }
+/* fin mise en forme header */
+/* debut mise en forme nav */
 nav {
   border: 1px dashed;
   min-height: 320px;
@@ -77,12 +76,28 @@ nav {
   margin: auto;
 }
 /* mise en forme icone */
-.contour_economique{
-  width: 30%;
-  border: solid 2px black;
+#bloc_filtre{
+  display: flex;
+  flex-direction: row;
 }
-.contour_economique p {
+#bloc_filtre em{
+  font-weight: bold;
+  font-style: unset;
+  margin-right: 32px;
+  margin-top: 15px;
+}
+.contour_filtre{
+  /* 195px/1440 */
+  margin-right: 25px;
+  border: solid 2px #f2f2f2;
+  border-radius: 30px;
+  height: 46px; /* - les 2px *2 border */
+  position: relative;
+}
+.contour_filtre p {
 float: right;
+margin: 20px 20px 15px 60px;
+font-weight: bold;
 }
 i[title="icone"]{
 color: #0065FC;
@@ -91,7 +106,11 @@ width: 50px;
 height: 50px;
 border-radius: 30px;
 background-color: #DEEBFF;
-vertical-align: middle;
+line-height: 50px;
+font-size: 1.1em;
+position: absolute;
+left: -2px;
+top: -2px;
 }
 /* fin */
 main {
