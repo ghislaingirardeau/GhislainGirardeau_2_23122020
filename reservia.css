@@ -499,7 +499,7 @@ nav {
 main {
   width: 100%;
 }
-}
+
 #hebergement_m {
   order: 2;
   border-radius: unset;
@@ -513,8 +513,17 @@ main {
   width: 100%;
 }
 #bloc_image_h article {
-  width: 140%;
+  width: 143%;
   height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+}
+#bloc_image_h img {
+  object-position: 0 -60px;
+}
+article #chez_amina {
+  object-position: 0 -200px;
+}
+article #hotel_mer {
+  object-position: 0 -100px;
 }
 
 
@@ -524,15 +533,35 @@ main {
   border-radius: 0px;
   width: 100%;
 }
+#bloc_image_p section {
+  width: 93%;
+  height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+}
+.attribut_texte_populaire i{
+  margin-top: 12px;
+}
+
+
 #activite {
   order: 3;
   padding-left: 3.5%; /* pour aligner tous mes titres */
   width: 96.5%; /* je retire le padding left de 3.5% */
 }
+#bloc_image_a {
+  height: 1260px;
+  width: 100%;
+}
+#bloc_image_a article {
+  width: 93%;
+  height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
+  border-radius: 20px;
+}
+
 footer {
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 3.5%;
+  padding-left: 7%;
+  margin-left: -3.5%;
 }
 
 }
