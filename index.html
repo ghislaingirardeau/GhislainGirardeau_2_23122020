@@ -32,17 +32,34 @@
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div id="recherche">
-            <i class="fas fa-map-marker-alt"></i>
-            <a href="#">Rechercher</a>
-        </div><!-- ajout des formulaires -->
-        <div id="filtre">filtre
-            <i class="fas fa-money-bill-wave"></i>Économique
-            <i class="fas fa-child"></i>Familiale
-            <i class="fas fa-heart"></i>Romantique
-            <i class="fas fa-dog"></i>Animaux autorisés
+        <div id="recherche"><!-- div afin de repositionner en flex sous mobile -->
+            <span class="localisation"><i class="fas fa-map-marker-alt"></i></span>
+            <span class="champs_recherche">
+            <input type="champs" name="recherche" placeholder="Marseille, France" class="champs"/>
+            <input type="submit" name="submit" src="#" value="Rechercher" class="recherche" />
+            <i class="fas fa-search" id="loupe"></i>
+        </span>
         </div>
-        <data value="500"><i class="fas fa-info-circle"></i>ou<i class="fas fa-info"></i></i>Plus de 500 logements sont
+        <section id="bloc_filtre">
+            <mark>Filtres</mark>
+            <div class="contour_filtre">
+                <i title="icone" class="fas fa-money-bill-wave"></i>
+                <em>Économique</em>
+            </div>
+            <div class="contour_filtre">
+                <i title="icone" class="fas fa-child"></i>
+                <em>Familial</em>
+            </div>
+            <div class="contour_filtre">
+                <i title="icone" class="fas fa-heart"></i>
+                <em>Romantique</em>
+            </div>
+            <div class="contour_filtre">
+                <i title="icone" class="fas fa-dog"></i>
+                <em>Animaux autorisés</em>
+            </div>       
+        </section>
+        <data value="500"><i class="fas fa-info"></i></i>Plus de 500 logements sont
             disponibles dans cette ville</data>
     </nav>
 
