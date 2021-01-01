@@ -13,7 +13,7 @@ h1 {
 }
 h2 {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 h3 {
   font-size: 1em;
@@ -99,7 +99,7 @@ nav {
   outline: none;
 }
 .recherche{
-  max-width: 135px;
+  width: 135px;
   height: 55px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
@@ -190,6 +190,7 @@ main {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
+
 #hebergement_m {
   background-color: #f2f2f2;
   border-radius: 10px;
