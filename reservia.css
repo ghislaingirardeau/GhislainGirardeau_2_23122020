@@ -216,6 +216,7 @@ i[title="vide"]{
   height: 188px;
   border: 4px white solid;
   box-shadow: 5px 5px 3px #f2f2f2;
+  background-color: white;
   border-radius: 20px;
   overflow: hidden; /* pour masquer le rest de l'image */
   position: relative;
@@ -232,15 +233,15 @@ i[title="vide"]{
   padding-left: 10px;
   position: absolute;
   top: 60%;
+  line-height: 8px;
 }
 .attribut_texte_hebergement h3 {
   margin-top: 10px;
 }
 .attribut_texte_hebergement h3,
-p {
-  line-height: 5px;
+p { 
+  margin-bottom: 10px;
 }
-
 #bloc_image_m #chez_amina {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
@@ -267,7 +268,7 @@ p {
   min-height: 625px;
   padding-left: 3.5%;
 }
-#populaire i {
+#populaire #chart {
   /* float / au texte pour une adaptation en responsive */
   float: right;
   margin-right: 40px;
@@ -300,6 +301,10 @@ p {
   width: 50%;
   float: right;
 }
+.attribut_texte_populaire i{
+  margin-top: 35px;
+}
+
 /* mise en forme bloc activite */
 #activite {
   width: 100%;
