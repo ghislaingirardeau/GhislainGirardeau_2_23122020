@@ -86,7 +86,6 @@ nav {
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   font-size: 1.3em;
-
 }
 .champs{
   width: 235px;
@@ -98,7 +97,6 @@ nav {
   font-weight: bold;
   color: black;
   outline: none;
-  
 }
 .recherche{
   max-width: 135px;
@@ -112,7 +110,6 @@ nav {
   font-size: 1.1em;
   font-weight: bold;
   outline: none;
-  
 }
 #loupe {
   position: absolute;
@@ -122,7 +119,8 @@ nav {
   font-size: 1.4em;
   display: none;
 }
-/* mise en forme icone */
+/* fin mise en forme recherche */
+/* mise en forme filtre */
 #bloc_filtre {
   display: flex;
   flex-direction: row;
@@ -166,6 +164,10 @@ i[title="icone"] {
   position: absolute;
   left: -2px;
   top: -2px;
+}
+.contour_filtre:hover{
+  border: solid 2px #0065fc;
+  color: #0065fc;
 }
 
 data i {
