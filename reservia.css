@@ -532,6 +532,8 @@ article #hotel_mer {
   order: 1;
   border-radius: 0px;
   width: 100%;
+  padding-left: 7%;
+  margin-left: -3.5%; /* background 100% largeur */
 }
 #bloc_image_p section {
   width: 93%;
