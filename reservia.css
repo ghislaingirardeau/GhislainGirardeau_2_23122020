@@ -77,13 +77,15 @@ nav {
 }
 /* mise en forme recherche */
 #recherche{
-  margin-top: 40px;
+  margin-top: 30px;
+  position: relative;
 }
 .localisation {
   background-color: #f2f2f2;
-  padding: 19px 15px 17px 15px;
+  padding: 14px 15px 16px 15px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
+  font-size: 1.3em;
 
 }
 .champs{
@@ -92,13 +94,14 @@ nav {
   margin-left: -4px;
   border: solid 2px #f2f2f2;
   padding-left: 17px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
   color: black;
+  outline: none;
   
 }
 .recherche{
-  width: 135px;
+  max-width: 135px;
   height: 55px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
@@ -106,10 +109,19 @@ nav {
   border: unset;
   color: white;
   margin-left: -6px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
+  outline: none;
+  
 }
-
+#loupe {
+  position: absolute;
+  top: 15px;
+  left: 310px;
+  color: white;
+  font-size: 1.4em;
+  display: none;
+}
 /* mise en forme icone */
 #bloc_filtre {
   display: flex;
