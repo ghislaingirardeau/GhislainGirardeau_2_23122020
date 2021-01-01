@@ -142,7 +142,7 @@ nav {
 .contour_filtre {
   /* 195px/1440 */
   margin-right: 25px;
-  border: solid 2px #f2f2f2;
+  border: solid 3px #f2f2f2;
   border-radius: 30px;
   height: 46px; /* - les 2px *2 border */
   position: relative;
@@ -166,7 +166,7 @@ i[title="icone"] {
   top: -2px;
 }
 .contour_filtre:hover{
-  border: solid 2px #0065fc;
+  border-color: #0065fc;
   color: #0065fc;
 }
 data i {
@@ -188,6 +188,12 @@ main {
   min-height: 1250px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
+}
+i[title="pleine"]{
+  color: #0065fc;
+}
+i[title="vide"]{
+  color: #f2f2f2;
 }
 /* mise en forme bloc hebergement */
 #hebergement_m {
