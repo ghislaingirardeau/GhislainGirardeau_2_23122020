@@ -242,12 +242,12 @@ i[title="vide"]{
 p { 
   margin-bottom: 10px;
 }
-#bloc_image_m #chez_amina {
+article #chez_amina {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
   object-position: 0 -110px;
 }
-#bloc_image_m #hotel_mer {
+article #hotel_mer {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
   object-position: 0 -45px;
