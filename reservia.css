@@ -39,7 +39,7 @@ header {
 #logo {
   /* ajuster le logo / taille conteneur */
   width: 20%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #ancre {
   width: 20%;
@@ -78,6 +78,7 @@ nav {
 /* mise en forme recherche */
 #recherche{
   margin-top: 30px;
+  width: 29%;
   position: relative;
 }
 .localisation {
@@ -88,7 +89,7 @@ nav {
   font-size: 1.3em;
 }
 .champs{
-  width: 235px;
+  width: 52%;
   height: 49px;
   margin-left: -4px;
   border: solid 2px #f2f2f2;
@@ -99,7 +100,7 @@ nav {
   outline: none;
 }
 .recherche{
-  width: 135px;
+  width: 30%;
   height: 55px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
@@ -116,7 +117,7 @@ nav {
   top: 15px;
   left: 310px;
   color: white;
-  font-size: 1.4em;
+  font-size: 1.1em;
   display: none;
 }
 /* fin mise en forme recherche */
@@ -233,7 +234,7 @@ i[title="vide"]{
   padding-left: 10px;
   position: absolute;
   top: 60%;
-  line-height: 8px;
+  line-height: 10px;
 }
 .attribut_texte_hebergement h3 {
   margin-top: 10px;
@@ -310,7 +311,7 @@ article #hotel_mer {
   width: 100%;
   min-height: 510px;
   margin-bottom: 4%;
-  margin-top: 4%;
+  margin-top: 3%;
 }
 #bloc_image_a {
   width: 100%;
@@ -441,41 +442,7 @@ h4 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 991px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  #hebergement_m {
-    width: 96.5%;
-  }
-  #populaire {
-    width: 96.5%;
-    height: 250px;
-    margin-top: 40px;
-  }
-  #bloc_image_p {
-    flex-direction: row;
-    padding-right: 30px;
-  }
-  #bloc_image_p div {
-    width: 32%;
-  }
-
-  #bloc_image_a {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 550px; /* a ajuster precisement */
-  }
-
-  #bloc_image_a div {
-    width: 30%;
-    height: 260px;
-  }
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) { /* petit ecran */
   #bloc_page {
     width: 100%;
     height: 100%;
@@ -484,119 +451,75 @@ h4 {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  #conteneur_logo {
-    width: 49%;
-  }
-  #logo {
-    width: 50%;
-  }
-  #ancre {
-    order: 1;
-    width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
-  }
-  #lien_inscire {
-    width: 50%;
-    text-align: right;
-  }
-  nav {
-    height: 520px;
-  }
 
-  main {
-    width: 100%;
-  }
-  #hebergement_m {
-    order: 2;
-    border-radius: unset;
-    background-color: unset;
-  }
-  #bloc_image_m {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    height: 1250px;
-    width: 100%;
-  }
-  #bloc_image_m div {
-    width: 93%;
-    height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
-  }
-  #bloc_image_m img {
-    top: -55px; /* recentrer les 3 images */
-  }
-  #bloc_image_m #chez_amina {
-    top: -200px;
-  }
-  #bloc_image_m #hotel_mer {
-    top: -100px;
-  }
-  #bloc_image_m #le_panier {
-    height: 100%;
-  }
+#conteneur_logo {
+  width: 49%;
+}
+#logo {
+  width: 50%;
+ 
+}
+#ancre {
+  order: 1;
+  width: 100%;
+  margin-bottom: 23px;
+}
+#ancre a:hover {
+  border-bottom: 3px #0065fc solid;
+  border-top: unset;
+  padding-bottom: 12px;
+  
+}
+#lien_inscire {
+  width: 50%;
+  margin-top: -20px;
+  text-align: right;
+}
+nav {
+  width: 100%;
+}
+#recherche{
+  width: 100%;
+}
+.recherche{
+  color: #0065fc;
+  width: 15%;
+  border-radius: 20px;
+  position: absolute;
+}
+.champs{
+  width: 61%;
+}
+#loupe{
+  display: inline-block;
+  left: 85%;
+  top: 18px;
+}
 
-  #populaire {
-    order: 1;
-    border-radius: 0px;
-    height: 560px;
-  }
-  #bloc_image_p {
-    flex-direction: column;
-    align-content: space-between;
-    height: 460px;
-  }
-  #bloc_image_p div {
-    width: 100%;
-    height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
-  }
-  #bloc_image_p #description {
-    width: 160px;
-    padding-left: 25px;
-  }
+main {
+  width: 100%;
+}
+}
+#hebergement_m {
+  order: 2;
+  border-radius: unset;
+  background-color: unset;
+}
 
-  #activite {
-    order: 3;
-    padding-left: 3.5%; /* pour aligner tous mes titres */
-    width: 96.5%; /* je retire le padding left de 3.5% */
-  }
-  #bloc_image_a {
-    height: 1260px;
-    width: 100%;
-  }
-  #bloc_image_a div {
-    width: 93%;
-    height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-    border-radius: 20px;
-  }
-  #vieux_port {
-    position: absolute;
-    top: -0px;
-    left: 0px;
-    width: 350px;
-    height: 231px;
-  }
-  #calanques {
-    position: absolute;
-    left: -40px;
-    top: -45px;
-    width: 426px;
-    height: 281px;
-  }
-  .image_a_fort img {
-    position: absolute;
-    top: -165px;
-  }
-  .image_a_ile img {
-    position: absolute;
-    left: 0px;
-    top: -10px;
-  }
+#populaire {
+  order: 1;
+  border-radius: 0px;
+  width: 100%;
+}
+#activite {
+  order: 3;
+  padding-left: 3.5%; /* pour aligner tous mes titres */
+  width: 96.5%; /* je retire le padding left de 3.5% */
+}
+footer {
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 3.5%;
+}
 
-  footer {
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 3.5%;
-    height: 485px;
-  }
 }
