@@ -1,6 +1,6 @@
 #bloc_page {
   /* width en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
-  
+
   width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
   height: 1884px;
   font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
@@ -19,7 +19,8 @@ h3 {
   font-size: 1em;
   font-weight: bold;
 }
-article, section a {
+article,
+section a {
   color: black;
 }
 /* fin bloc mise en forme */
@@ -53,16 +54,16 @@ header {
   width: 50%; /* egaliser la largeur pour avoir une bordure de meme longueur */
   text-align: center; /* puis centre le texte */
 }
-#ancre a:hover{
-  color: #0065FC;
-  border-top: 3px #0065FC solid;
+#ancre a:hover {
+  color: #0065fc;
+  border-top: 3px #0065fc solid;
   padding-top: 47px; /* pour annuler le recul bottom de 3px au survol */
-} 
+}
 #lien_inscire {
   width: 10%;
   padding-top: 50px;
   text-align: center;
-  color: #0065FC;
+  color: #0065fc;
   font-weight: bold;
   font-size: 1.1em;
   text-decoration: none;
@@ -70,25 +71,65 @@ header {
 /* fin mise en forme header */
 /* debut mise en forme nav */
 nav {
-  border: 1px dashed;
   min-height: 320px;
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
+/* mise en forme recherche */
+#recherche{
+  margin-top: 40px;
+}
+.localisation {
+  background-color: #f2f2f2;
+  padding: 19px 15px 17px 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+
+}
+.champs{
+  width: 235px;
+  height: 49px;
+  margin-left: -4px;
+  border: solid 2px #f2f2f2;
+  padding-left: 17px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: black;
+  
+}
+.recherche{
+  width: 135px;
+  height: 55px;
+  background-color: #0065fc;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border: unset;
+  color: white;
+  margin-left: -6px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
 /* mise en forme icone */
-#bloc_filtre{
+#bloc_filtre {
   display: flex;
   flex-direction: row;
   margin-bottom: 35px;
-  margin-top: 35px;
+  margin-top: 30px;
 }
-#bloc_filtre em{
+#bloc_filtre mark {
+  font-weight: bold;
+  background-color: unset;
+  margin-right: 32px;
+  margin-top: 17px;
+}
+#bloc_filtre em {
   font-weight: bold;
   font-style: unset;
   margin-right: 32px;
   margin-top: 15px;
 }
-.contour_filtre{
+.contour_filtre {
   /* 195px/1440 */
   margin-right: 25px;
   border: solid 2px #f2f2f2;
@@ -96,34 +137,35 @@ nav {
   height: 46px; /* - les 2px *2 border */
   position: relative;
 }
-.contour_filtre p {
-float: right;
-margin: 20px 20px 15px 60px;
-font-weight: bold;
+.contour_filtre em {
+  float: right;
+  margin-left: 60px;
+  font-weight: bold;
 }
-i[title="icone"]{
-color: #0065FC;
-text-align: center;
-width: 50px;
-height: 50px;
-border-radius: 30px;
-background-color: #DEEBFF;
-line-height: 50px;
-font-size: 1.1em;
-position: absolute;
-left: -2px;
-top: -2px;
+i[title="icone"] {
+  color: #0065fc;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background-color: #deebff;
+  line-height: 50px;
+  font-size: 1.1em;
+  position: absolute;
+  left: -2px;
+  top: -2px;
 }
 
-data i { /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
-  color: #0065FC;
+data i {
+  /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
+  color: #0065fc;
   width: 30px;
   height: 25px;
   text-align: center;
   border: solid 2px #f2f2f2;
   border-radius: 30px;
   padding-top: 5px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 /* fin */
 main {
@@ -189,7 +231,7 @@ p {
   object-fit: contain;
   object-position: 0 -45px;
 }
-.bouton_plus{
+.bouton_plus {
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
@@ -227,7 +269,8 @@ p {
   overflow: hidden;
 }
 /* utilisation flex box a l'interieur pour ajuster plus facilement l'img et le txt*/
-.attribut_image_populaire{ /* chaque image a le meme format dans sa boite */
+.attribut_image_populaire {
+  /* chaque image a le meme format dans sa boite */
   width: 45%;
   height: 100%;
   object-fit: cover;
@@ -237,7 +280,6 @@ p {
   width: 50%;
   float: right;
 }
-
 
 #activite {
   width: 100%;
@@ -253,7 +295,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
-  
 } /* taille d'image differente dans activité */
 
 .image_a_long {
@@ -265,7 +306,8 @@ p {
   overflow: hidden;
   position: relative;
 }
-#bloc_image_a p{ /* meme propriete p dans toutes les images */
+#bloc_image_a p {
+  /* meme propriete p dans toutes les images */
   height: 37px; /* 37+ 20px de padding top */
   width: 100%;
   background-color: white;
@@ -313,7 +355,7 @@ p {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position:0% 40%;
+  object-position: 0% 40%;
 }
 .image_a_notre {
   width: 24%;
@@ -337,7 +379,7 @@ p {
 .image_a_parc img {
   width: 100%;
   object-fit: cover;
-  object-position:0 -15px;
+  object-position: 0 -15px;
 }
 
 footer {
@@ -360,7 +402,7 @@ footer div {
 }
 footer ul {
   margin-top: -15px;
-  }
+}
 footer li {
   width: 360px;
   line-height: 30px;
