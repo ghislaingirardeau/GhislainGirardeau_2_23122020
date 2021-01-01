@@ -169,7 +169,6 @@ i[title="icone"] {
   border: solid 2px #0065fc;
   color: #0065fc;
 }
-
 data i {
   /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
   color: #0065fc;
@@ -190,7 +189,7 @@ main {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-
+/* mise en forme bloc hebergement */
 #hebergement_m {
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -254,7 +253,7 @@ p {
   margin-top: 40px;
   font-size: 1.1em;
 }
-
+/* mise en forme bloc populaire */
 #populaire {
   background-color: #f2f2f2;
   border-radius: 10px;
@@ -295,7 +294,7 @@ p {
   width: 50%;
   float: right;
 }
-
+/* mise en forme bloc activite */
 #activite {
   width: 100%;
   min-height: 510px;
@@ -396,7 +395,7 @@ p {
   object-fit: cover;
   object-position: 0 -15px;
 }
-
+/* mise en forme footer */
 footer {
   background-color: #f2f2f2;
   min-height: 214px;
