@@ -505,6 +505,19 @@ main {
   border-radius: unset;
   background-color: unset;
 }
+#bloc_image_h {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 1250px;
+  width: 100%;
+}
+#bloc_image_h article {
+  width: 140%;
+  height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+}
+
+
 
 #populaire {
   order: 1;
