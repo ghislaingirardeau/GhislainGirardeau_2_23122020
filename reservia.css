@@ -9,14 +9,18 @@
 /* bloc mise en forme generale du texte */
 h1 {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 h2 {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 h3 {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.1em;
   font-weight: bold;
 }
 article,
@@ -143,7 +147,7 @@ nav {
 .contour_filtre_eco em {
   font-weight: bold;
   font-style: unset;
-  padding-left: 13px;
+  padding-left: 12px;
   text-align: center;
   }
   .contour_filtre_fam {
@@ -156,7 +160,7 @@ nav {
   .contour_filtre_fam em {
   font-weight: bold;
   font-style: unset;
-  padding-left: 13px;
+  padding-left: 12px;
   text-align: center;
   }
   .contour_filtre_rom {
@@ -169,7 +173,7 @@ nav {
   .contour_filtre_rom em {
   font-weight: bold;
   font-style: unset;
-  padding-left: 13px;
+  padding-left: 12px;
   text-align: center;
   }
   .contour_filtre_ani {
@@ -182,7 +186,7 @@ nav {
   .contour_filtre_ani em {
   font-weight: bold;
   font-style: unset;
-  padding-left: 13px;
+  padding-left: 12px;
   text-align: center;
   }
 
@@ -469,15 +473,12 @@ footer li {
   margin-left: -40px;
   text-align: left;
 }
-h4 {
-  font-size: 1.1em;
-  font-weight: bold;
-}
+
 
 @media screen and (max-width: 768px) {
   /* petit ecran */
   #bloc_page {
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
   header {
@@ -505,9 +506,10 @@ h4 {
     padding-bottom: 12px;
   }
   #lien_inscire {
-    width: 50%;
+    width: 46%;
     margin-top: -20px;
     text-align: right;
+    margin-right: 3.5%;
   }
   nav {
   }
@@ -544,9 +546,9 @@ h4 {
     margin-right: unset;
     width: 40%;
   }
-.contour_filtre_rom {
+  .contour_filtre_rom {
   margin-right: unset;
-  width: 51%;
+  width: 49%;
   }
   .contour_filtre_ani {
     margin-right: unset;
@@ -562,11 +564,15 @@ h4 {
   main {
     width: 100%;
   }
+  #hebergement_m h2{
+    width: 150%; /* pour un titre sur une seule ligne */
+  }
   /* Ajustement hebergement */
   #hebergement_m {
     order: 2;
     border-radius: unset;
     background-color: unset;
+    margin-top: 20px;
   }
   #bloc_image_h {
     display: flex;
@@ -591,6 +597,11 @@ h4 {
   article #le_panier {
     object-position: 0 -20px;
   }
+  .bouton_plus {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+  }
   /* Ajustement populaire */
   #populaire {
     order: 1;
@@ -599,8 +610,12 @@ h4 {
     padding-left: 7%;
     margin-left: -3.5%; /* background 100% largeur */
   }
+  #populaire #chart {
+    float: right;
+    margin-right: 20px;
+  }
   #bloc_image_p section {
-    width: 93%;
+    width: 90%;
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
   .attribut_texte_populaire i {
