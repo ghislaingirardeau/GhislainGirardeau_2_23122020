@@ -193,13 +193,13 @@ nav {
 i[title="icone"] {
   color: #0065fc;
   text-align: center;
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 30px;
   background-color: #deebff;
   line-height: 50px;
   font-size: 1.1em;
-  margin-top: -1px;
+  margin-top: px;
   margin-left: -1px;
 }
 #bloc_filtre div:hover {
