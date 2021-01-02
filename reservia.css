@@ -134,8 +134,9 @@ nav {
   margin-right: 32px;
   margin-top: 17px;
 }
-.contour_filtre_eco {
-border: solid 3px #f2f2f2;
+.contour_filtre_eco { /* un bloc par filtre car la largeur de chaque varie et
+  adaptation plus rapide en mode mobile */
+ border: solid 3px #f2f2f2;
   border-radius: 30px;
   height: 46px;
   width: 14.5%;
@@ -148,40 +149,40 @@ border: solid 3px #f2f2f2;
   text-align: center;
   }
   .contour_filtre_fam {
-border: solid 3px #f2f2f2;
+ border: solid 3px #f2f2f2;
   border-radius: 30px;
   height: 46px;
   width: 11.5%;
   margin-right: 20px;
   }
   .contour_filtre_fam em {
-    font-weight: bold;
+  font-weight: bold;
   font-style: unset;
   padding-left: 13px;
   text-align: center;
   }
   .contour_filtre_rom {
-border: solid 3px #f2f2f2;
+  border: solid 3px #f2f2f2;
   border-radius: 30px;
   height: 46px;
   width: 14.5%;
   margin-right: 20px;
   }
   .contour_filtre_rom em {
-    font-weight: bold;
+  font-weight: bold;
   font-style: unset;
   padding-left: 13px;
   text-align: center;
   }
   .contour_filtre_ani {
-border: solid 3px #f2f2f2;
+  border: solid 3px #f2f2f2;
   border-radius: 30px;
   height: 46px;
   width: 18%;
   margin-right: 20px;
   }
   .contour_filtre_ani em {
-    font-weight: bold;
+  font-weight: bold;
   font-style: unset;
   padding-left: 13px;
   text-align: center;
@@ -199,7 +200,7 @@ i[title="icone"] {
   margin-top: -1px;
   margin-left: -1px;
 }
-.contour_filtre:hover {
+#bloc_filtre div:hover {
   border-color: #0065fc;
   color: #0065fc;
 }
@@ -511,7 +512,7 @@ h4 {
     text-align: right;
   }
   nav {
-    background-color: chartreuse;
+    
   }
   #recherche {
     width: 100%;
@@ -532,14 +533,28 @@ h4 {
   }
   #bloc_filtre{
     flex-wrap: wrap;
+    height: 240px;
   }
   #bloc_filtre mark{
     width: 100%;
+    margin-bottom: 5px;
   }
-  .contour_filtre {
-    margin-right: 0px;
+  .contour_filtre_eco {
+    margin-right: 14px;
+    width: 51%;
   }
-
+  .contour_filtre_fam {
+    margin-right: unset;
+    width: 40%;
+  }
+.contour_filtre_rom {
+  margin-right: unset;
+  width: 51%;
+  }
+  .contour_filtre_ani {
+    margin-right: unset;
+    width: 63%;
+  }
   main {
     width: 100%;
   }
