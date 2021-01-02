@@ -1,2 +1,2 @@
 # reservia
-prjet 2 : reservia
+projet 2 : reservia
