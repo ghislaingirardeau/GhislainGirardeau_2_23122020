@@ -462,7 +462,7 @@ footer ul {
   margin-top: -15px;
 }
 footer li {
-  width: 360px;
+  width: 100%;
   line-height: 30px;
   list-style-type: none;
   display: inline-block;
@@ -470,7 +470,7 @@ footer li {
   text-align: left;
 }
 h4 {
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
@@ -562,7 +562,7 @@ h4 {
   main {
     width: 100%;
   }
-
+  /* Ajustement hebergement */
   #hebergement_m {
     order: 2;
     border-radius: unset;
@@ -580,7 +580,7 @@ h4 {
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
   #bloc_image_h img {
-    object-position: 0 -40px;
+    object-position: 0 -45px;
   }
   article #chez_amina {
     object-position: 0 -173px;
@@ -588,7 +588,10 @@ h4 {
   article #hotel_mer {
     object-position: 0 -80px;
   }
-
+  article #le_panier {
+    object-position: 0 -20px;
+  }
+  /* Ajustement populaire */
   #populaire {
     order: 1;
     border-radius: 0px;
@@ -603,11 +606,12 @@ h4 {
   .attribut_texte_populaire i {
     margin-top: 12px;
   }
-
+  /* Ajustement activite */
   #activite {
     order: 3;
     padding-left: 3.5%; /* pour aligner tous mes titres */
     width: 96.5%; /* je retire le padding left de 3.5% */
+    margin-bottom: 35px;
   }
   #bloc_image_a {
     height: 1260px;
@@ -618,11 +622,30 @@ h4 {
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border-radius: 20px;
   }
+  .image_a_fort img {
+    object-position: 0% 45%;
+  }
+  .image_a_ile img {
+    object-position: 0% -30%;
+  }
+  #vieux_port {
+    object-position: 50% -20%;
+  }
 
   footer {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 7%;
     margin-left: -3.5%;
+    padding-top: 10px;
+  }
+  #a_propos {
+    width: 93%;
+  }
+  #nos_herbegements {
+    width: 93%;
+  }
+  #assistance {
+    width: 93%;
   }
 }
