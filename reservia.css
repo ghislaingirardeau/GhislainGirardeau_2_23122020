@@ -580,13 +580,13 @@ h4 {
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
   #bloc_image_h img {
-    object-position: 0 -60px;
+    object-position: 0 -40px;
   }
   article #chez_amina {
-    object-position: 0 -200px;
+    object-position: 0 -173px;
   }
   article #hotel_mer {
-    object-position: 0 -100px;
+    object-position: 0 -80px;
   }
 
   #populaire {
