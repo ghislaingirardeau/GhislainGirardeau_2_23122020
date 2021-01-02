@@ -134,35 +134,70 @@ nav {
   margin-right: 32px;
   margin-top: 17px;
 }
-#bloc_filtre em {
+.contour_filtre_eco {
+border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 14.5%;
+  margin-right: 20px;
+}
+.contour_filtre_eco em {
   font-weight: bold;
   font-style: unset;
-  margin-right: 32px;
-  margin-top: 15px;
-  float: right;
-  margin-left: 60px;
-}
-.contour_filtre {
-  /* 195px/1440 */
-  margin-right: 25px;
-  border: solid 3px #f2f2f2;
+  padding-left: 13px;
+  text-align: center;
+  }
+  .contour_filtre_fam {
+border: solid 3px #f2f2f2;
   border-radius: 30px;
-  height: 46px; /* - les 2px *2 border */
-  position: relative;
-}
+  height: 46px;
+  width: 11.5%;
+  margin-right: 20px;
+  }
+  .contour_filtre_fam em {
+    font-weight: bold;
+  font-style: unset;
+  padding-left: 13px;
+  text-align: center;
+  }
+  .contour_filtre_rom {
+border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 14.5%;
+  margin-right: 20px;
+  }
+  .contour_filtre_rom em {
+    font-weight: bold;
+  font-style: unset;
+  padding-left: 13px;
+  text-align: center;
+  }
+  .contour_filtre_ani {
+border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 18%;
+  margin-right: 20px;
+  }
+  .contour_filtre_ani em {
+    font-weight: bold;
+  font-style: unset;
+  padding-left: 13px;
+  text-align: center;
+  }
 
 i[title="icone"] {
   color: #0065fc;
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 48px;
+  height: 48px;
   border-radius: 30px;
   background-color: #deebff;
   line-height: 50px;
   font-size: 1.1em;
-  position: absolute;
-  left: -2px;
-  top: -2px;
+  margin-top: -1px;
+  margin-left: -1px;
 }
 .contour_filtre:hover {
   border-color: #0065fc;
