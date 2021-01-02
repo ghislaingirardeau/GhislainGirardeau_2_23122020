@@ -9,14 +9,18 @@
 /* bloc mise en forme generale du texte */
 h1 {
   font-weight: bold;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 h2 {
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 h3 {
-  font-size: 1em;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.1em;
   font-weight: bold;
 }
 article,
@@ -39,7 +43,7 @@ header {
 #logo {
   /* ajuster le logo / taille conteneur */
   width: 20%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 #ancre {
   width: 20%;
@@ -76,47 +80,46 @@ nav {
   margin: auto;
 }
 /* mise en forme recherche */
-#recherche{
+#recherche {
   margin-top: 30px;
-  position: relative;
+  width: 31%;
 }
-.localisation {
+#localisation {
   background-color: #f2f2f2;
-  padding: 14px 15px 16px 15px;
+  padding: 18px 16px 18px 16px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   font-size: 1.3em;
 }
-.champs{
-  width: 235px;
-  height: 49px;
-  margin-left: -4px;
+.champs {
+  width: 50%;
+  margin-left: -2%;
   border: solid 2px #f2f2f2;
-  padding-left: 17px;
+  padding: 17px 16px 14px 16px; /* top et bottom different */
   font-size: 1.1em;
   font-weight: bold;
-  color: black;
   outline: none;
 }
-.recherche{
-  width: 135px;
-  height: 55px;
+.recherche {
+  width: 30%;
+  padding: 18px 16px 15px 16px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   border: unset;
   color: white;
-  margin-left: -6px;
+  margin-left: -2%;
   font-size: 1.1em;
   font-weight: bold;
   outline: none;
 }
 #loupe {
-  position: absolute;
-  top: 15px;
-  left: 310px;
   color: white;
-  font-size: 1.4em;
+  padding: 17px 17px;
+  background-color: #0065fc;
+  border-radius: 15px;
+  font-size: 1.3em;
+  margin-left: -4%;
   display: none;
 }
 /* fin mise en forme recherche */
@@ -133,39 +136,73 @@ nav {
   margin-right: 32px;
   margin-top: 17px;
 }
-#bloc_filtre em {
+.contour_filtre_eco { /* un bloc par filtre car la largeur de chaque varie et
+  adaptation plus rapide en mode mobile */
+ border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 14.5%;
+  margin-right: 20px;
+}
+.contour_filtre_eco em {
   font-weight: bold;
   font-style: unset;
-  margin-right: 32px;
-  margin-top: 15px;
-}
-.contour_filtre {
-  /* 195px/1440 */
-  margin-right: 25px;
+  padding-left: 12px;
+  text-align: center;
+  }
+  .contour_filtre_fam {
+ border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 11.5%;
+  margin-right: 20px;
+  }
+  .contour_filtre_fam em {
+  font-weight: bold;
+  font-style: unset;
+  padding-left: 12px;
+  text-align: center;
+  }
+  .contour_filtre_rom {
   border: solid 3px #f2f2f2;
   border-radius: 30px;
-  height: 46px; /* - les 2px *2 border */
-  position: relative;
-}
-.contour_filtre em {
-  float: right;
-  margin-left: 60px;
+  height: 46px;
+  width: 14.5%;
+  margin-right: 20px;
+  }
+  .contour_filtre_rom em {
   font-weight: bold;
-}
+  font-style: unset;
+  padding-left: 12px;
+  text-align: center;
+  }
+  .contour_filtre_ani {
+  border: solid 3px #f2f2f2;
+  border-radius: 30px;
+  height: 46px;
+  width: 18%;
+  margin-right: 20px;
+  }
+  .contour_filtre_ani em {
+  font-weight: bold;
+  font-style: unset;
+  padding-left: 12px;
+  text-align: center;
+  }
+
 i[title="icone"] {
   color: #0065fc;
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border-radius: 30px;
   background-color: #deebff;
   line-height: 50px;
   font-size: 1.1em;
-  position: absolute;
-  left: -2px;
-  top: -2px;
+  margin-top: px;
+  margin-left: -1px;
 }
-.contour_filtre:hover{
+#bloc_filtre div:hover {
   border-color: #0065fc;
   color: #0065fc;
 }
@@ -189,10 +226,10 @@ main {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-i[title="pleine"]{
+i[title="pleine"] {
   color: #0065fc;
 }
-i[title="vide"]{
+i[title="vide"] {
   color: #f2f2f2;
 }
 /* mise en forme bloc hebergement */
@@ -233,13 +270,13 @@ i[title="vide"]{
   padding-left: 10px;
   position: absolute;
   top: 60%;
-  line-height: 8px;
+  line-height: 10px;
 }
 .attribut_texte_hebergement h3 {
   margin-top: 10px;
 }
 .attribut_texte_hebergement h3,
-p { 
+p {
   margin-bottom: 10px;
 }
 article #chez_amina {
@@ -301,8 +338,8 @@ article #hotel_mer {
   width: 50%;
   float: right;
 }
-.attribut_texte_populaire i{
-  margin-top: 35px;
+.attribut_texte_populaire i {
+  margin-top: 30px;
 }
 
 /* mise en forme bloc activite */
@@ -310,7 +347,7 @@ article #hotel_mer {
   width: 100%;
   min-height: 510px;
   margin-bottom: 4%;
-  margin-top: 4%;
+  margin-top: 3%;
 }
 #bloc_image_a {
   width: 100%;
@@ -429,174 +466,201 @@ footer ul {
   margin-top: -15px;
 }
 footer li {
-  width: 360px;
+  width: 100%;
   line-height: 30px;
   list-style-type: none;
   display: inline-block;
   margin-left: -40px;
   text-align: left;
 }
-h4 {
-  font-size: 1.3em;
-  font-weight: bold;
-}
 
-@media screen and (max-width: 991px) {
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-  #hebergement_m {
-    width: 96.5%;
-  }
-  #populaire {
-    width: 96.5%;
-    height: 250px;
-    margin-top: 40px;
-  }
-  #bloc_image_p {
-    flex-direction: row;
-    padding-right: 30px;
-  }
-  #bloc_image_p div {
-    width: 32%;
-  }
-
-  #bloc_image_a {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: 550px; /* a ajuster precisement */
-  }
-
-  #bloc_image_a div {
-    width: 30%;
-    height: 260px;
-  }
-}
 
 @media screen and (max-width: 768px) {
+  /* petit ecran */
   #bloc_page {
-    width: 100%;
+    width: 99%;
     height: 100%;
   }
   header {
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: -3.5%; /* pour ajuster le a:hover sur toute la largeur de l'ecran */
+    width: 100%;
   }
+
   #conteneur_logo {
     width: 49%;
   }
   #logo {
     width: 50%;
+    margin-left: 20px;
   }
   #ancre {
     order: 1;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+  }
+  #ancre a:hover {
+    border-bottom: 3px #0065fc solid;
+    border-top: unset;
+    padding-bottom: 12px;
   }
   #lien_inscire {
-    width: 50%;
+    width: 46%;
+    margin-top: -20px;
     text-align: right;
+    margin-right: 3.5%;
   }
   nav {
-    height: 520px;
   }
-
+  /* Ajustement du bloc recherche */
+  #recherche {
+    width: 100%;
+    margin-bottom: -20px;
+  }
+  .recherche {
+    display: none; 
+  }
+  .champs{
+    width: 60%;
+  }
+  #loupe {
+    display: unset;
+    
+  }
+  /* Ajustement du bloc filtre */
+  #bloc_filtre{
+    flex-wrap: wrap;
+    height: 240px;
+    margin-bottom: 25px;
+  }
+  #bloc_filtre mark{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .contour_filtre_eco {
+    margin-right: 14px;
+    width: 51%;
+  }
+  .contour_filtre_fam {
+    margin-right: unset;
+    width: 40%;
+  }
+  .contour_filtre_rom {
+  margin-right: unset;
+  width: 49%;
+  }
+  .contour_filtre_ani {
+    margin-right: unset;
+    width: 63%;
+  }
+  /* Ajustement de data */
+  data i {
+    float: left;
+    margin-bottom: 40px;
+  }
+  
+  /* bloc main */
   main {
     width: 100%;
   }
+  #hebergement_m h2{
+    width: 150%; /* pour un titre sur une seule ligne */
+  }
+  /* Ajustement hebergement */
   #hebergement_m {
     order: 2;
     border-radius: unset;
     background-color: unset;
+    margin-top: 20px;
   }
-  #bloc_image_m {
+  #bloc_image_h {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     height: 1250px;
     width: 100%;
   }
-  #bloc_image_m div {
-    width: 93%;
+  #bloc_image_h article {
+    width: 143%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
-  #bloc_image_m img {
-    top: -55px; /* recentrer les 3 images */
+  #bloc_image_h img {
+    object-position: 0 -45px;
   }
-  #bloc_image_m #chez_amina {
-    top: -200px;
+  article #chez_amina {
+    object-position: 0 -173px;
   }
-  #bloc_image_m #hotel_mer {
-    top: -100px;
+  article #hotel_mer {
+    object-position: 0 -80px;
   }
-  #bloc_image_m #le_panier {
-    height: 100%;
+  article #le_panier {
+    object-position: 0 -20px;
   }
-
+  .bouton_plus {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    
+  }
+  /* Ajustement populaire */
   #populaire {
     order: 1;
     border-radius: 0px;
-    height: 560px;
-  }
-  #bloc_image_p {
-    flex-direction: column;
-    align-content: space-between;
-    height: 460px;
-  }
-  #bloc_image_p div {
     width: 100%;
+    padding-left: 7%;
+    margin-left: -3.5%; /* background 100% largeur */
+  }
+  #populaire #chart {
+    float: right;
+    margin-right: 20px;
+  }
+  #bloc_image_p section {
+    width: 90%;
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
-  #bloc_image_p #description {
-    width: 160px;
-    padding-left: 25px;
+  .attribut_texte_populaire i {
+    margin-top: 12px;
   }
-
+  /* Ajustement activite */
   #activite {
     order: 3;
     padding-left: 3.5%; /* pour aligner tous mes titres */
     width: 96.5%; /* je retire le padding left de 3.5% */
+    margin-bottom: 35px;
   }
   #bloc_image_a {
     height: 1260px;
     width: 100%;
   }
-  #bloc_image_a div {
+  #bloc_image_a article {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border-radius: 20px;
   }
-  #vieux_port {
-    position: absolute;
-    top: -0px;
-    left: 0px;
-    width: 350px;
-    height: 231px;
-  }
-  #calanques {
-    position: absolute;
-    left: -40px;
-    top: -45px;
-    width: 426px;
-    height: 281px;
-  }
   .image_a_fort img {
-    position: absolute;
-    top: -165px;
+    object-position: 0% 45%;
   }
   .image_a_ile img {
-    position: absolute;
-    left: 0px;
-    top: -10px;
+    object-position: 0% -30%;
+  }
+  #vieux_port {
+    object-position: 50% -20%;
   }
 
   footer {
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 3.5%;
-    height: 485px;
+    padding-left: 7%;
+    margin-left: -3.5%;
+    padding-top: 10px;
+  }
+  #a_propos {
+    width: 93%;
+  }
+  #nos_herbegements {
+    width: 93%;
+  }
+  #assistance {
+    width: 93%;
   }
 }

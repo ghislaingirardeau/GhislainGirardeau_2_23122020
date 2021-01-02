@@ -33,7 +33,7 @@
             <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div id="recherche"><!-- div afin de repositionner en flex sous mobile -->
-            <span class="localisation"><i class="fas fa-map-marker-alt"></i></span>
+            <span><i class="fas fa-map-marker-alt" id="localisation"></i></span>
             <span class="champs_recherche">
             <input type="champs" name="recherche" placeholder="Marseille, France" class="champs"/>
             <input type="submit" name="submit" src="#" value="Rechercher" class="recherche" />
@@ -42,19 +42,19 @@
         </div>
         <section id="bloc_filtre">
             <mark>Filtres</mark>
-            <div class="contour_filtre">
+            <div class="contour_filtre_eco">
                 <i title="icone" class="fas fa-money-bill-wave"></i>
                 <em>Économique</em>
             </div>
-            <div class="contour_filtre">
+            <div class="contour_filtre_fam">
                 <i title="icone" class="fas fa-child"></i>
                 <em>Familial</em>
             </div>
-            <div class="contour_filtre">
+            <div class="contour_filtre_rom">
                 <i title="icone" class="fas fa-heart"></i>
                 <em>Romantique</em>
             </div>
-            <div class="contour_filtre">
+            <div class="contour_filtre_ani">
                 <i title="icone" class="fas fa-dog"></i>
                 <em>Animaux autorisés</em>
             </div>       
@@ -104,7 +104,7 @@
                     </div></a>
                 </article>
                 <article><a href="#">
-                    <img src="/element/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" />
+                    <img src="/element/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="" id="le_panier"/>
                     <div class="attribut_texte_hebergement">
                         <h3>Auberge Le Panier</h3>
                         <p>Nuit à partir de 23€</p>
