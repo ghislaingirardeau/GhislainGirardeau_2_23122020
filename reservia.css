@@ -514,6 +514,7 @@ h4 {
   nav {
     
   }
+  /* Ajustement du bloc recherche */
   #recherche {
     width: 100%;
   }
@@ -531,6 +532,7 @@ h4 {
     left: 85%;
     top: 18px;
   }
+  /* Ajustement du bloc filtre */
   #bloc_filtre{
     flex-wrap: wrap;
     height: 240px;
@@ -555,6 +557,13 @@ h4 {
     margin-right: unset;
     width: 63%;
   }
+  /* Ajustement de data */
+  data i {
+    float: left;
+    margin-bottom: 40px;
+  }
+  
+  /* bloc main */
   main {
     width: 100%;
   }
