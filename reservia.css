@@ -78,46 +78,44 @@ nav {
 /* mise en forme recherche */
 #recherche {
   margin-top: 30px;
-  width: 29%;
-  position: relative;
+  width: 31%;
 }
-.localisation {
+#localisation {
   background-color: #f2f2f2;
-  padding: 14px 15px 16px 15px;
+  padding: 18px 16px 18px 16px;
   border-bottom-left-radius: 15px;
   border-top-left-radius: 15px;
   font-size: 1.3em;
 }
 .champs {
-  width: 52%;
-  height: 49px;
-  margin-left: -4px;
+  width: 50%;
+  margin-left: -2%;
   border: solid 2px #f2f2f2;
-  padding-left: 17px;
+  padding: 17px 16px 14px 16px; /* top et bottom different */
   font-size: 1.1em;
   font-weight: bold;
-  color: black;
   outline: none;
 }
 .recherche {
   width: 30%;
-  height: 55px;
+  padding: 18px 16px 15px 16px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   border: unset;
   color: white;
-  margin-left: -6px;
+  margin-left: -2%;
   font-size: 1.1em;
   font-weight: bold;
   outline: none;
 }
 #loupe {
-  position: absolute;
-  top: 15px;
-  left: 310px;
   color: white;
-  font-size: 1.1em;
+  padding: 17px 17px;
+  background-color: #0065fc;
+  border-radius: 15px;
+  font-size: 1.3em;
+  margin-left: -4%;
   display: none;
 }
 /* fin mise en forme recherche */
@@ -512,30 +510,27 @@ h4 {
     text-align: right;
   }
   nav {
-    
   }
   /* Ajustement du bloc recherche */
   #recherche {
     width: 100%;
+    margin-bottom: -20px;
   }
   .recherche {
-    color: #0065fc;
-    width: 15%;
-    border-radius: 20px;
-    position: absolute;
+    display: none; 
   }
-  .champs {
-    width: 61%;
+  .champs{
+    width: 60%;
   }
   #loupe {
-    display: inline-block;
-    left: 85%;
-    top: 18px;
+    display: unset;
+    
   }
   /* Ajustement du bloc filtre */
   #bloc_filtre{
     flex-wrap: wrap;
     height: 240px;
+    margin-bottom: 25px;
   }
   #bloc_filtre mark{
     width: 100%;
