@@ -76,7 +76,7 @@ nav {
   margin: auto;
 }
 /* mise en forme recherche */
-#recherche{
+#recherche {
   margin-top: 30px;
   width: 29%;
   position: relative;
@@ -88,7 +88,7 @@ nav {
   border-top-left-radius: 15px;
   font-size: 1.3em;
 }
-.champs{
+.champs {
   width: 52%;
   height: 49px;
   margin-left: -4px;
@@ -99,7 +99,7 @@ nav {
   color: black;
   outline: none;
 }
-.recherche{
+.recherche {
   width: 30%;
   height: 55px;
   background-color: #0065fc;
@@ -139,6 +139,8 @@ nav {
   font-style: unset;
   margin-right: 32px;
   margin-top: 15px;
+  float: right;
+  margin-left: 60px;
 }
 .contour_filtre {
   /* 195px/1440 */
@@ -148,11 +150,7 @@ nav {
   height: 46px; /* - les 2px *2 border */
   position: relative;
 }
-.contour_filtre em {
-  float: right;
-  margin-left: 60px;
-  font-weight: bold;
-}
+
 i[title="icone"] {
   color: #0065fc;
   text-align: center;
@@ -166,7 +164,7 @@ i[title="icone"] {
   left: -2px;
   top: -2px;
 }
-.contour_filtre:hover{
+.contour_filtre:hover {
   border-color: #0065fc;
   color: #0065fc;
 }
@@ -190,10 +188,10 @@ main {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-i[title="pleine"]{
+i[title="pleine"] {
   color: #0065fc;
 }
-i[title="vide"]{
+i[title="vide"] {
   color: #f2f2f2;
 }
 /* mise en forme bloc hebergement */
@@ -240,7 +238,7 @@ i[title="vide"]{
   margin-top: 10px;
 }
 .attribut_texte_hebergement h3,
-p { 
+p {
   margin-bottom: 10px;
 }
 article #chez_amina {
@@ -302,8 +300,8 @@ article #hotel_mer {
   width: 50%;
   float: right;
 }
-.attribut_texte_populaire i{
-  margin-top: 35px;
+.attribut_texte_populaire i {
+  margin-top: 30px;
 }
 
 /* mise en forme bloc activite */
@@ -442,7 +440,8 @@ h4 {
   font-weight: bold;
 }
 
-@media screen and (max-width: 768px) { /* petit ecran */
+@media screen and (max-width: 768px) {
+  /* petit ecran */
   #bloc_page {
     width: 100%;
     height: 100%;
@@ -450,120 +449,126 @@ h4 {
   header {
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-left: -3.5%; /* pour ajuster le a:hover sur toute la largeur de l'ecran */
+    width: 100%;
   }
 
-#conteneur_logo {
-  width: 49%;
-}
-#logo {
-  width: 50%;
- 
-}
-#ancre {
-  order: 1;
-  width: 100%;
-  margin-bottom: 23px;
-}
-#ancre a:hover {
-  border-bottom: 3px #0065fc solid;
-  border-top: unset;
-  padding-bottom: 12px;
-  
-}
-#lien_inscire {
-  width: 50%;
-  margin-top: -20px;
-  text-align: right;
-}
-nav {
-  width: 100%;
-}
-#recherche{
-  width: 100%;
-}
-.recherche{
-  color: #0065fc;
-  width: 15%;
-  border-radius: 20px;
-  position: absolute;
-}
-.champs{
-  width: 61%;
-}
-#loupe{
-  display: inline-block;
-  left: 85%;
-  top: 18px;
-}
+  #conteneur_logo {
+    width: 49%;
+  }
+  #logo {
+    width: 50%;
+    margin-left: 20px;
+  }
+  #ancre {
+    order: 1;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  #ancre a:hover {
+    border-bottom: 3px #0065fc solid;
+    border-top: unset;
+    padding-bottom: 12px;
+  }
+  #lien_inscire {
+    width: 50%;
+    margin-top: -20px;
+    text-align: right;
+  }
+  nav {
+    background-color: chartreuse;
+  }
+  #recherche {
+    width: 100%;
+  }
+  .recherche {
+    color: #0065fc;
+    width: 15%;
+    border-radius: 20px;
+    position: absolute;
+  }
+  .champs {
+    width: 61%;
+  }
+  #loupe {
+    display: inline-block;
+    left: 85%;
+    top: 18px;
+  }
+  #bloc_filtre{
+    flex-wrap: wrap;
+  }
+  #bloc_filtre mark{
+    width: 100%;
+  }
+  .contour_filtre {
+    margin-right: 0px;
+  }
 
-main {
-  width: 100%;
-}
+  main {
+    width: 100%;
+  }
 
-#hebergement_m {
-  order: 2;
-  border-radius: unset;
-  background-color: unset;
-}
-#bloc_image_h {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  height: 1250px;
-  width: 100%;
-}
-#bloc_image_h article {
-  width: 143%;
-  height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
-}
-#bloc_image_h img {
-  object-position: 0 -60px;
-}
-article #chez_amina {
-  object-position: 0 -200px;
-}
-article #hotel_mer {
-  object-position: 0 -100px;
-}
+  #hebergement_m {
+    order: 2;
+    border-radius: unset;
+    background-color: unset;
+  }
+  #bloc_image_h {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 1250px;
+    width: 100%;
+  }
+  #bloc_image_h article {
+    width: 143%;
+    height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+  }
+  #bloc_image_h img {
+    object-position: 0 -60px;
+  }
+  article #chez_amina {
+    object-position: 0 -200px;
+  }
+  article #hotel_mer {
+    object-position: 0 -100px;
+  }
 
+  #populaire {
+    order: 1;
+    border-radius: 0px;
+    width: 100%;
+    padding-left: 7%;
+    margin-left: -3.5%; /* background 100% largeur */
+  }
+  #bloc_image_p section {
+    width: 93%;
+    height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+  }
+  .attribut_texte_populaire i {
+    margin-top: 12px;
+  }
 
+  #activite {
+    order: 3;
+    padding-left: 3.5%; /* pour aligner tous mes titres */
+    width: 96.5%; /* je retire le padding left de 3.5% */
+  }
+  #bloc_image_a {
+    height: 1260px;
+    width: 100%;
+  }
+  #bloc_image_a article {
+    width: 93%;
+    height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
+    border-radius: 20px;
+  }
 
-#populaire {
-  order: 1;
-  border-radius: 0px;
-  width: 100%;
-  padding-left: 7%;
-  margin-left: -3.5%; /* background 100% largeur */
-}
-#bloc_image_p section {
-  width: 93%;
-  height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
-}
-.attribut_texte_populaire i{
-  margin-top: 12px;
-}
-
-
-#activite {
-  order: 3;
-  padding-left: 3.5%; /* pour aligner tous mes titres */
-  width: 96.5%; /* je retire le padding left de 3.5% */
-}
-#bloc_image_a {
-  height: 1260px;
-  width: 100%;
-}
-#bloc_image_a article {
-  width: 93%;
-  height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-  border-radius: 20px;
-}
-
-footer {
-  flex-direction: column;
-  justify-content: space-between;
-  padding-left: 7%;
-  margin-left: -3.5%;
-}
-
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 7%;
+    margin-left: -3.5%;
+  }
 }
