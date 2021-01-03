@@ -504,36 +504,21 @@ main {
   margin-top: 20px;
 }
 .bloc_image_h {
-  display: flex;
-  flex-direction: column;
-  align-content: space-between;
-  height: 1750px;
-  width: 100%;
+  width: 150%;
+  height: 860px; /* height chaque article + espacement */
 }
 .bloc_image_h article {
-  width: 123%;
+  width: 46.5%;
   height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
 }
-.bloc_image_h div {
-  top: 70%;
-  height: 100%;
-}
+
 .bloc_image_h img {
-  object-position: 0 -195px;
-}
-article #hotel_mer {
-  object-position: 0 -290px;
-}
-article #le_panier {
-  object-position: 0 -60px;
-}
-article #chez_amina {
-  object-position: 0 -550px;
+  object-position: 0 -45px;
 }
 
 #aff_plus {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 /* Ajustement populaire */
 aside {
@@ -545,17 +530,17 @@ aside {
 }
 aside #chart {
   float: right;
-  margin-right: 20px;
+  margin-right: 50px;
 }
 .bloc_image_p  {
-  height: 700px;
+  height: 630px; /* height chaque article + espacement */
 }
 .bloc_image_p article {
-  width: 75%;
-  height: 220px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+  margin-left: 5%;
+  height: 200px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
 }
 .bloc_image_p div i {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 /* Ajustement activite */
 .activite {
@@ -565,7 +550,7 @@ aside #chart {
   margin-bottom: 35px;
 }
 .bloc_image_a {
-  height: 660px;
+  height: 640px; /* height chaque article + espacement */
   width: 93%;
   flex-direction: row;
 }
@@ -584,13 +569,13 @@ aside #chart {
   object-position: 50% -20%;
 }
 #a_propos {
-  width: 35%;
+  width: 40%;
 }
 #nos_herbegements {
-  width: 32%;
+  width: 30%;
 }
 #assistance {
-  width: 32%;
+  width: 30%;
 }
 }
 @media screen and (max-width: 600px) {
