@@ -521,13 +521,15 @@ main {
   top: 60%;
   line-height: 10px;
 }
-.bloc_image_h img {
-  object-position: 0 -45px;
+/* ajustement des positions en fonction de la taille max, lors retrecissement les img recadrent mieux */
+
+article #les_mouettes{ /* pour un ajustement individuel a la reduction de la taille */
+  object-position: 0 -25px;
 }
 article #hotel_mer {
   object-position: 0 -80px;
 }
-article #le_panier {
+article #le_panier { /* pour un ajustement individuel a la reduction de la taille */
   object-position: 0 0px;
 }
 article #chez_amina {
@@ -551,11 +553,11 @@ aside #chart {
   margin-right: 50px;
 }
 .bloc_image_p  {
-  height: 630px; /* height chaque article + espacement */
+  height: 680px; /* height chaque article + espacement */
 }
 .bloc_image_p article {
   margin-left: 5%;
-  height: 200px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
+  height: 220px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
 }
 .bloc_image_p div i {
   margin-top: 40px;
@@ -578,22 +580,27 @@ aside #chart {
   border-radius: 20px;
 }
 .image_a_fort img {
-  object-position: 0% 45%;
+  object-position: 0% 65%;
 }
 .image_a_ile img {
-  object-position: 0% -30%;
+  object-position: 0% -10%;
 }
 #vieux_port {
-  object-position: 50% -20%;
+  object-position: 50% 20%;
 }
+#calanques {
+  object-position: 50% 30%;
+}
+/* mise en forme footer */
 #a_propos {
-  width: 40%;
+  width: 33%;
+  margin-left: 10px;
 }
 #nos_herbegements {
-  width: 30%;
+  width: 33%;
 }
 #assistance {
-  width: 30%;
+  width: 33%;
 }
 }
 @media screen and (max-width: 678px) {
