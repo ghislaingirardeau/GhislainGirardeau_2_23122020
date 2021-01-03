@@ -252,15 +252,15 @@ i[title="vide"] {
 p {
   margin-bottom: 10px; /* ecart p et etoile */
 }
-article #chez_amina {
-  /* appeler le bloc pour ensuite la balise a l'interieur */
-  object-fit: contain;
-  object-position: 0 -110px;
-}
 article #hotel_mer {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
   object-position: 0 -45px;
+}
+article #chez_amina {
+  /* appeler le bloc pour ensuite la balise a l'interieur */
+  object-fit: contain;
+  object-position: 0 -110px;
 }
 #aff_plus {
   display: inline-block;
@@ -418,7 +418,7 @@ footer li {
   margin-left: -40px;
   text-align: left;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 991px) {
   /* ecran tablette */
   #bloc_page {
     width: 99%;
@@ -516,13 +516,10 @@ main {
 }
 .bloc_image_h div {
   top: 70%;
-  height: 100px;
+  height: 100%;
 }
 .bloc_image_h img {
   object-position: 0 -195px;
-}
-article #chez_amina {
-  object-position: 0 -550px;
 }
 article #hotel_mer {
   object-position: 0 -290px;
@@ -530,6 +527,10 @@ article #hotel_mer {
 article #le_panier {
   object-position: 0 -60px;
 }
+article #chez_amina {
+  object-position: 0 -550px;
+}
+
 #aff_plus {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -564,11 +565,12 @@ aside #chart {
   margin-bottom: 35px;
 }
 .bloc_image_a {
-  height: 1260px;
-  width: 100%;
+  height: 660px;
+  width: 93%;
+  flex-direction: row;
 }
 .bloc_image_a article {
-  width: 93%;
+  width: 46%;
   height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
   border-radius: 20px;
 }
@@ -580,6 +582,15 @@ aside #chart {
 }
 #vieux_port {
   object-position: 50% -20%;
+}
+#a_propos {
+  width: 35%;
+}
+#nos_herbegements {
+  width: 32%;
+}
+#assistance {
+  width: 32%;
 }
 }
 @media screen and (max-width: 600px) {
@@ -691,15 +702,16 @@ aside #chart {
   .bloc_image_h img {
     object-position: 0 -45px;
   }
-  article #chez_amina {
-    object-position: 0 -173px;
-  }
   article #hotel_mer {
     object-position: 0 -80px;
   }
   article #le_panier {
     object-position: 0 -20px;
   }
+  article #chez_amina {
+    object-position: 0 -173px;
+  }
+ 
   #aff_plus {
     margin-top: 25px;
     margin-bottom: 25px;
