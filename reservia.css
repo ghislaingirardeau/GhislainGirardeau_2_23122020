@@ -23,8 +23,7 @@ h4 {
   font-size: 1.1em;
   font-weight: bold;
 }
-article,
-section a {
+article, a {
   color: black;
 }
 /* fin bloc mise en forme */
@@ -271,25 +270,25 @@ article #hotel_mer {
   font-size: 1.1em;
 }
 /* mise en forme bloc populaire */
-#populaire {
+aside {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 29%;
   min-height: 625px;
   padding-left: 3.5%;
 }
-#populaire #chart {
+aside #chart {
   /* float / au texte pour une adaptation en responsive */
   float: right;
   margin-right: 40px;
 }
-#bloc_image_p {
+.bloc_image_p {
   height: 550px; /* retirer la marge du titre */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-#image_populaire {
+.bloc_image_p article {
   /* bloc incluant img et description */
   height: 28%;
   width: 87%;
@@ -300,19 +299,19 @@ article #hotel_mer {
   overflow: hidden;
 }
 /* utilisation flex box a l'interieur pour ajuster plus facilement l'img et le txt*/
-.attribut_image_populaire {
+.bloc_image_p img {
   /* chaque image a le meme format dans sa boite */
   width: 45%;
   height: 100%;
   object-fit: cover;
 }
-.attribut_texte_populaire {
+.bloc_image_p div {
   margin-left: 10px;
   width: 50%;
   float: right;
 }
-.attribut_texte_populaire i {
-  margin-top: 30px;
+.bloc_image_p div i {
+  margin-top: 25px;
 }
 
 /* mise en forme bloc activite */
@@ -575,23 +574,23 @@ footer li {
     
   }
   /* Ajustement populaire */
-  #populaire {
+  aside {
     order: 1;
     border-radius: 0px;
     width: 100%;
     padding-left: 7%;
     margin-left: -3.5%; /* background 100% largeur */
   }
-  #populaire #chart {
+  aside #chart {
     float: right;
     margin-right: 20px;
   }
-  #bloc_image_p section {
+  .bloc_image_p article {
     width: 90%;
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
-  .attribut_texte_populaire i {
-    margin-top: 12px;
+  .bloc_image_p div i {
+    margin-top: 10px;
   }
   /* Ajustement activite */
   #activite {
