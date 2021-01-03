@@ -315,13 +315,13 @@ aside #chart {
 }
 
 /* mise en forme bloc activite */
-#activite {
+.activite {
   width: 100%;
   min-height: 510px;
   margin-bottom: 4%;
   margin-top: 3%;
 }
-#bloc_image_a {
+.bloc_image_a {
   width: 100%;
   height: 445px;
   display: flex;
@@ -330,17 +330,7 @@ aside #chart {
   justify-content: space-between;
   align-content: space-between;
 } /* taille d'image differente dans activité */
-
-.image_a_long {
-  /* meme attribut pour les 2 images longs */
-  width: 24%;
-  height: 100%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px #f2f2f2;
-  overflow: hidden;
-  position: relative;
-}
-#bloc_image_a p {
+.bloc_image_a p {
   /* meme propriete p dans toutes les images */
   height: 37px; /* 37+ 20px de padding top */
   width: 100%;
@@ -350,6 +340,18 @@ aside #chart {
   padding-left: 20px;
   padding-top: 20px;
   font-weight: bold;
+}
+.bloc_image_a article {
+  border-radius: 20px;
+  box-shadow: 5px 5px 3px #f2f2f2;
+  overflow: hidden;
+  position: relative;
+}
+
+.image_a_long {
+  /* meme attribut pour les 2 images longs */
+  width: 24%;
+  height: 100%;
 }
 #vieux_port {
   width: 100%;
@@ -366,10 +368,6 @@ aside #chart {
 .image_a_fort {
   width: 24%;
   height: 54%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px #f2f2f2;
-  overflow: hidden;
-  position: relative;
 }
 .image_a_fort img {
   width: 100%;
@@ -380,10 +378,6 @@ aside #chart {
 .image_a_ile {
   width: 24%;
   height: 40%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px #f2f2f2;
-  overflow: hidden;
-  position: relative;
 }
 .image_a_ile img {
   width: 100%;
@@ -394,10 +388,6 @@ aside #chart {
 .image_a_notre {
   width: 24%;
   height: 44%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px #f2f2f2;
-  overflow: hidden;
-  position: relative;
 }
 .image_a_notre img {
   width: 100%;
@@ -405,10 +395,6 @@ aside #chart {
 .image_a_parc {
   width: 24%;
   height: 47%;
-  border-radius: 20px;
-  box-shadow: 5px 5px 3px #f2f2f2;
-  overflow: hidden;
-  position: relative;
 }
 .image_a_parc img {
   width: 100%;
@@ -483,8 +469,7 @@ footer li {
     text-align: right;
     margin-right: 3.5%;
   }
-  nav {
-  }
+  
   /* Ajustement du bloc recherche */
   .recherche {
     width: 100%;
@@ -593,17 +578,17 @@ footer li {
     margin-top: 10px;
   }
   /* Ajustement activite */
-  #activite {
+  .activite {
     order: 3;
     padding-left: 3.5%; /* pour aligner tous mes titres */
     width: 96.5%; /* je retire le padding left de 3.5% */
     margin-bottom: 35px;
   }
-  #bloc_image_a {
+  .bloc_image_a {
     height: 1260px;
     width: 100%;
   }
-  #bloc_image_a article {
+  .bloc_image_a article {
     width: 93%;
     height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
     border-radius: 20px;
