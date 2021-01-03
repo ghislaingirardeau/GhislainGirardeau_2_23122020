@@ -23,7 +23,8 @@ h4 {
   font-size: 1.1em;
   font-weight: bold;
 }
-article, a {
+article,
+a {
   color: black;
 }
 /* fin bloc mise en forme */
@@ -153,14 +154,14 @@ nav {
 #contour_filtre_fam {
   width: 11.5%;
   margin-right: 20px;
-  }
-#contour_filtre_rom { 
+}
+#contour_filtre_rom {
   width: 14.5%;
   margin-right: 20px;
-  }
+}
 #contour_filtre_ani {
   width: 18%;
-  }
+}
 
 i[title="icone"] {
   color: #0065fc;
@@ -347,7 +348,8 @@ aside #chart {
   overflow: hidden;
   position: relative;
 }
-.bloc_image_a article img { /* commun a toutes les images */
+.bloc_image_a article img {
+  /* commun a toutes les images */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -416,9 +418,171 @@ footer li {
   margin-left: -40px;
   text-align: left;
 }
+@media screen and (max-width: 1024px) {
+  /* ecran tablette */
+  #bloc_page {
+    width: 99%;
+    height: 100%;
+  }
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -3.5%; /* pour ajuster le a:hover sur toute la largeur de l'ecran */
+    width: 100%;
+  }
+  .conteneur_logo {
+    width: 49%;
+  }
+  #logo {
+    width: 50%;
+    margin-left: 60px;
+  }
+  .ancre {
+    order: 1;
+    width: 100%;
+    padding-bottom: 15px;
+  }
+  .ancre a:hover {
+    border-bottom: 3px #0065fc solid;
+    border-top: unset;
+    padding-bottom: 12px;
+  }
+  #lien_inscire {
+    width: 46%;
+    margin-top: -20px;
+    text-align: right;
+    margin-right: 3.5%;
+  }
+  /* Ajustement du bloc recherche */
+  .recherche {
+    width: 70%;
+    margin-bottom: -20px;
+  }
+/* Ajustement du bloc filtre */
+.bloc_filtre {
+  flex-wrap: wrap;
+  height: 240px;
+  margin-bottom: 20px;
+}
+.bloc_filtre h4 {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#contour_filtre_eco {
+  margin-right: 30px;
+  width: 30%;
+}
+#contour_filtre_fam {
+  width: 25%;
+  margin-right: 30px;
+}
+#contour_filtre_rom {
+  width: 30%;
+  margin-right: 30px;
+}
+#contour_filtre_ani {
+  width: 40%;
+}
+/* Ajustement de data */
+data i {
+  float: left;
+  margin-bottom: 20px;
+}
 
-
-@media screen and (max-width: 768px) {
+/* bloc main */
+main {
+  width: 100%;
+}
+.hebergement_m h2 {
+  width: 150%; /* pour un titre sur une seule ligne */
+}
+/* Ajustement hebergement */
+.hebergement_m {
+  order: 2;
+  border-radius: unset;
+  background-color: unset;
+  margin-top: 20px;
+}
+.bloc_image_h {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  height: 1750px;
+  width: 100%;
+}
+.bloc_image_h article {
+  width: 123%;
+  height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+}
+.bloc_image_h div {
+  top: 70%;
+  height: 100px;
+}
+.bloc_image_h img {
+  object-position: 0 -195px;
+}
+article #chez_amina {
+  object-position: 0 -550px;
+}
+article #hotel_mer {
+  object-position: 0 -290px;
+}
+article #le_panier {
+  object-position: 0 -60px;
+}
+#aff_plus {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+/* Ajustement populaire */
+aside {
+  order: 1;
+  border-radius: 0px;
+  width: 100%;
+  padding-left: 7%;
+  margin-left: -3.5%; /* background 100% largeur */
+}
+aside #chart {
+  float: right;
+  margin-right: 20px;
+}
+.bloc_image_p  {
+  height: 700px;
+}
+.bloc_image_p article {
+  width: 75%;
+  height: 220px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+}
+.bloc_image_p div i {
+  margin-top: 10px;
+}
+/* Ajustement activite */
+.activite {
+  order: 3;
+  padding-left: 3.5%; /* pour aligner tous mes titres */
+  width: 96.5%; /* je retire le padding left de 3.5% */
+  margin-bottom: 35px;
+}
+.bloc_image_a {
+  height: 1260px;
+  width: 100%;
+}
+.bloc_image_a article {
+  width: 93%;
+  height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
+  border-radius: 20px;
+}
+.image_a_fort img {
+  object-position: 0% 45%;
+}
+.image_a_ile img {
+  object-position: 0% -30%;
+}
+#vieux_port {
+  object-position: 50% -20%;
+}
+}
+@media screen and (max-width: 600px) {
   /* petit ecran */
   #bloc_page {
     width: 99%;
@@ -430,7 +594,6 @@ footer li {
     margin-left: -3.5%; /* pour ajuster le a:hover sur toute la largeur de l'ecran */
     width: 100%;
   }
-
   .conteneur_logo {
     width: 49%;
   }
@@ -454,29 +617,28 @@ footer li {
     text-align: right;
     margin-right: 3.5%;
   }
-  
+
   /* Ajustement du bloc recherche */
   .recherche {
     width: 100%;
     margin-bottom: -20px;
   }
   #rechercher {
-    display: none; 
+    display: none;
   }
-  #champs{
+  #champs {
     width: 60%;
   }
   #loupe {
     display: unset;
-    
   }
   /* Ajustement du bloc filtre */
-  .bloc_filtre{
+  .bloc_filtre {
     flex-wrap: wrap;
     height: 240px;
     margin-bottom: 25px;
   }
-  .bloc_filtre h4{
+  .bloc_filtre h4 {
     width: 100%;
     margin-bottom: 5px;
   }
@@ -489,8 +651,8 @@ footer li {
     margin-right: unset;
   }
   #contour_filtre_rom {
-  width: 49%;
-  margin-right: unset;
+    width: 49%;
+    margin-right: unset;
   }
   #contour_filtre_ani {
     width: 63%;
@@ -500,12 +662,12 @@ footer li {
     float: left;
     margin-bottom: 40px;
   }
-  
+
   /* bloc main */
   main {
     width: 100%;
   }
-  .hebergement_m h2{
+  .hebergement_m h2 {
     width: 150%; /* pour un titre sur une seule ligne */
   }
   /* Ajustement hebergement */
@@ -541,7 +703,6 @@ footer li {
   #aff_plus {
     margin-top: 25px;
     margin-bottom: 25px;
-    
   }
   /* Ajustement populaire */
   aside {
