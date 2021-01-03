@@ -675,7 +675,7 @@ aside #chart {
   /* Ajustement populaire */
   aside #chart {
     float: right;
-    margin-right: 20px;
+    margin-right: 40px;
   }
   .bloc_image_p  {
     height: 550px; /* height chaque article + espacement */
