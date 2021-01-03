@@ -252,6 +252,7 @@ i[title="vide"] {
 p {
   margin-bottom: 10px; /* ecart p et etoile */
 }
+
 article #hotel_mer {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
@@ -511,9 +512,26 @@ main {
   width: 46.5%;
   height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
 }
-
+.bloc_image_h div {
+  width: 100%;
+  background-color: white;
+  height: 127px;
+  padding-left: 10px;
+  position: absolute;
+  top: 60%;
+  line-height: 10px;
+}
 .bloc_image_h img {
   object-position: 0 -45px;
+}
+article #hotel_mer {
+  object-position: 0 -80px;
+}
+article #le_panier {
+  object-position: 0 0px;
+}
+article #chez_amina {
+  object-position: 0 -203px;
 }
 
 #aff_plus {
@@ -578,7 +596,7 @@ aside #chart {
   width: 30%;
 }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 678px) {
   /* petit ecran */
   #bloc_page {
     width: 99%;
