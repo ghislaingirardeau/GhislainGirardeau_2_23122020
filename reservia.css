@@ -206,14 +206,14 @@ i[title="vide"] {
   color: #f2f2f2;
 }
 /* mise en forme bloc hebergement */
-#hebergement_m {
+.hebergement_m {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 61%;
   padding-left: 3.5%;
   min-height: 625px;
 }
-#bloc_image_h {
+.bloc_image_h {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* ecart entre image */
@@ -221,7 +221,7 @@ i[title="vide"] {
   min-height: 437px;
   width: 96%;
 }
-#bloc_image_h article {
+.bloc_image_h article {
   width: 29%;
   height: 188px;
   border: 4px white solid;
@@ -231,12 +231,12 @@ i[title="vide"] {
   overflow: hidden; /* pour masquer le rest de l'image */
   position: relative;
 }
-#bloc_image_h img {
+.bloc_image_h img {
   width: 100%;
   object-fit: contain;
   object-position: 0 -15px;
 }
-.attribut_texte_hebergement {
+.bloc_image_h div {
   width: 100%;
   background-color: white;
   height: 77px;
@@ -245,12 +245,12 @@ i[title="vide"] {
   top: 60%;
   line-height: 10px;
 }
-.attribut_texte_hebergement h3 {
-  margin-top: 10px;
+.bloc_image_h div h3 {
+  margin-top: 10px; /* ecart h et p */
 }
-.attribut_texte_hebergement h3,
+.bloc_image_h div h3,
 p {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* ecart p et etoile */
 }
 article #chez_amina {
   /* appeler le bloc pour ensuite la balise a l'interieur */
@@ -262,7 +262,7 @@ article #hotel_mer {
   object-fit: contain;
   object-position: 0 -45px;
 }
-.bouton_plus {
+#aff_plus {
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
@@ -536,28 +536,28 @@ footer li {
   main {
     width: 100%;
   }
-  #hebergement_m h2{
+  .hebergement_m h2{
     width: 150%; /* pour un titre sur une seule ligne */
   }
   /* Ajustement hebergement */
-  #hebergement_m {
+  .hebergement_m {
     order: 2;
     border-radius: unset;
     background-color: unset;
     margin-top: 20px;
   }
-  #bloc_image_h {
+  .bloc_image_h {
     display: flex;
     flex-direction: column;
     align-content: space-between;
     height: 1250px;
     width: 100%;
   }
-  #bloc_image_h article {
+  .bloc_image_h article {
     width: 143%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
-  #bloc_image_h img {
+  .bloc_image_h img {
     object-position: 0 -45px;
   }
   article #chez_amina {
@@ -569,7 +569,7 @@ footer li {
   article #le_panier {
     object-position: 0 -20px;
   }
-  .bouton_plus {
+  #aff_plus {
     margin-top: 25px;
     margin-bottom: 25px;
     
