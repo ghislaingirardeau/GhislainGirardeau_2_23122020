@@ -36,7 +36,7 @@ header {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-#conteneur_logo {
+.conteneur_logo {
   /* definr une taille du conteneur pour ajuster les box / aux differents formats mobile */
   width: 67%;
 }
@@ -45,12 +45,12 @@ header {
   width: 20%;
   margin-top: 20px;
 }
-#ancre {
+.ancre {
   width: 20%;
   display: flex;
   justify-content: space-around;
 }
-#ancre a {
+.ancre a {
   font-size: 1.1em;
   text-decoration: none;
   color: black;
@@ -58,7 +58,7 @@ header {
   width: 50%; /* egaliser la largeur pour avoir une bordure de meme longueur */
   text-align: center; /* puis centre le texte */
 }
-#ancre a:hover {
+.ancre a:hover {
   color: #0065fc;
   border-top: 3px #0065fc solid;
   padding-top: 47px; /* pour annuler le recul bottom de 3px au survol */
@@ -80,7 +80,7 @@ nav {
   margin: auto;
 }
 /* mise en forme recherche */
-#recherche {
+.recherche {
   margin-top: 30px;
   width: 31%;
 }
@@ -91,18 +91,18 @@ nav {
   border-top-left-radius: 15px;
   font-size: 1.3em;
 }
-.champs {
+#champs {
   width: 50%;
   margin-left: -2%;
   border: solid 2px #f2f2f2;
-  padding: 17px 16px 14px 16px; /* top et bottom different */
+  padding: 18px 16px 14px 16px; /* top et bottom different */
   font-size: 1.1em;
   font-weight: bold;
   outline: none;
 }
-.recherche {
+#rechercher {
   width: 30%;
-  padding: 18px 16px 15px 16px;
+  padding: 19px 16px 16px 16px;
   background-color: #0065fc;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
@@ -488,19 +488,19 @@ footer li {
     width: 100%;
   }
 
-  #conteneur_logo {
+  .conteneur_logo {
     width: 49%;
   }
   #logo {
     width: 50%;
     margin-left: 20px;
   }
-  #ancre {
+  .ancre {
     order: 1;
     width: 100%;
     padding-bottom: 15px;
   }
-  #ancre a:hover {
+  .ancre a:hover {
     border-bottom: 3px #0065fc solid;
     border-top: unset;
     padding-bottom: 12px;
@@ -514,14 +514,14 @@ footer li {
   nav {
   }
   /* Ajustement du bloc recherche */
-  #recherche {
+  .recherche {
     width: 100%;
     margin-bottom: -20px;
   }
-  .recherche {
+  #rechercher {
     display: none; 
   }
-  .champs{
+  #champs{
     width: 60%;
   }
   #loupe {

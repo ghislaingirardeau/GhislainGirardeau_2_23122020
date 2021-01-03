@@ -16,9 +16,9 @@
     <!-- chaque div relatif a un bloc interne et attribut pour chaque div afin 
     de les identifer rapidement dans CSS -->
     <header>
-        <div id="conteneur_logo"><img src="/element/images/logo/Reservia@3x.png" alt="" id="logo"> </div>
+        <div class="conteneur_logo"><img src="/element/images/logo/Reservia@3x.png" alt="logo_reservia" id="logo"> </div>
         <!-- img dans div pour controler le format de l'image dans le conteneur -->
-        <div id="ancre">
+        <div class="ancre">
             <!-- ajout des ancres -->
             <a href="#HM">Hébergements</a>
             <a href="#AM">Activités</a>
@@ -26,19 +26,15 @@
         <a href="#" id="lien_inscire">S'inscire</a><!-- media queries : changer ordre, inscrire ordre  -->
         </div>
     </header>
-
+<!-- block en class et id sur des points precis -->
     <nav>
-        <div id="texte">
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-        </div>
-        <div id="recherche"><!-- div afin de repositionner en flex sous mobile -->
-            <span><i class="fas fa-map-marker-alt" id="localisation"></i></span>
-            <span class="champs_recherche">
-            <input type="champs" name="recherche" placeholder="Marseille, France" class="champs"/>
-            <input type="submit" name="submit" src="#" value="Rechercher" class="recherche" />
+        <div class="recherche"><!-- div afin de repositionner en flex sous mobile -->
+            <i class="fas fa-map-marker-alt" id="localisation"></i>
+            <input type="champs" name="recherche" placeholder="Marseille, France" id="champs"/>
+            <input type="submit" name="submit" src="#" value="Rechercher" id="rechercher" />
             <i class="fas fa-search" id="loupe"></i>
-        </span>
         </div>
         <section id="bloc_filtre">
             <mark>Filtres</mark>
