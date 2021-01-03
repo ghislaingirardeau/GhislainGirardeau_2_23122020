@@ -513,13 +513,7 @@ main {
   height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
 }
 .bloc_image_h div {
-  width: 100%;
-  background-color: white;
   height: 127px;
-  padding-left: 10px;
-  position: absolute;
-  top: 60%;
-  line-height: 10px;
 }
 /* ajustement des positions en fonction de la taille max, lors retrecissement les img recadrent mieux */
 
@@ -605,44 +599,13 @@ aside #chart {
 }
 @media screen and (max-width: 678px) {
   /* petit ecran */
-  #bloc_page {
-    width: 99%;
-    height: 100%;
-  }
-  header {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: -3.5%; /* pour ajuster le a:hover sur toute la largeur de l'ecran */
-    width: 100%;
-  }
-  .conteneur_logo {
-    width: 49%;
-  }
+ 
   #logo {
-    width: 50%;
     margin-left: 20px;
   }
-  .ancre {
-    order: 1;
-    width: 100%;
-    padding-bottom: 15px;
-  }
-  .ancre a:hover {
-    border-bottom: 3px #0065fc solid;
-    border-top: unset;
-    padding-bottom: 12px;
-  }
-  #lien_inscire {
-    width: 46%;
-    margin-top: -20px;
-    text-align: right;
-    margin-right: 3.5%;
-  }
-
   /* Ajustement du bloc recherche */
   .recherche {
     width: 100%;
-    margin-bottom: -20px;
   }
   #rechercher {
     display: none;
@@ -655,13 +618,7 @@ aside #chart {
   }
   /* Ajustement du bloc filtre */
   .bloc_filtre {
-    flex-wrap: wrap;
-    height: 240px;
     margin-bottom: 25px;
-  }
-  .bloc_filtre h4 {
-    width: 100%;
-    margin-bottom: 5px;
   }
   #contour_filtre_eco {
     margin-right: 14px;
@@ -680,24 +637,11 @@ aside #chart {
   }
   /* Ajustement de data */
   data i {
-    float: left;
     margin-bottom: 40px;
   }
 
-  /* bloc main */
-  main {
-    width: 100%;
-  }
-  .hebergement_m h2 {
-    width: 150%; /* pour un titre sur une seule ligne */
-  }
   /* Ajustement hebergement */
-  .hebergement_m {
-    order: 2;
-    border-radius: unset;
-    background-color: unset;
-    margin-top: 20px;
-  }
+  
   .bloc_image_h {
     display: flex;
     flex-direction: column;
@@ -710,65 +654,60 @@ aside #chart {
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
   .bloc_image_h img {
-    object-position: 0 -45px;
+    object-position: 0 -110px;
+  }
+  article #les_mouettes{ /* pour un ajustement individuel a la reduction de la taille pour tablette*/
+    object-position: 0 -110px;
   }
   article #hotel_mer {
-    object-position: 0 -80px;
+    object-position: 0 -180px;
   }
   article #le_panier {
-    object-position: 0 -20px;
+    object-position: 0 -90px;
   }
   article #chez_amina {
-    object-position: 0 -173px;
+    object-position: 0 -310px;
   }
- 
   #aff_plus {
     margin-top: 25px;
     margin-bottom: 25px;
   }
   /* Ajustement populaire */
-  aside {
-    order: 1;
-    border-radius: 0px;
-    width: 100%;
-    padding-left: 7%;
-    margin-left: -3.5%; /* background 100% largeur */
-  }
   aside #chart {
     float: right;
     margin-right: 20px;
   }
+  .bloc_image_p  {
+    height: 550px; /* height chaque article + espacement */
+  }
   .bloc_image_p article {
+    margin-left: unset;
     width: 90%;
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
   .bloc_image_p div i {
-    margin-top: 10px;
+    vertical-align: baseline;
+    margin-top: unset;
   }
   /* Ajustement activite */
-  .activite {
-    order: 3;
-    padding-left: 3.5%; /* pour aligner tous mes titres */
-    width: 96.5%; /* je retire le padding left de 3.5% */
-    margin-bottom: 35px;
-  }
   .bloc_image_a {
     height: 1260px;
     width: 100%;
   }
   .bloc_image_a article {
     width: 93%;
-    height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-    border-radius: 20px;
   }
-  .image_a_fort img {
-    object-position: 0% 45%;
-  }
-  .image_a_ile img {
-    object-position: 0% -30%;
+  .bloc_image_a article img {
+    object-position: 0% 50%;
   }
   #vieux_port {
-    object-position: 50% -20%;
+    object-position: 50% 50%;
+  }
+  #calanques {
+    object-position: 50% 50%;
+  }
+  #notre_dame {
+    object-position: 0% 25%;
   }
 
   footer {
@@ -780,6 +719,7 @@ aside #chart {
   }
   #a_propos {
     width: 93%;
+    margin-left: unset;
   }
   #nos_herbegements {
     width: 93%;
