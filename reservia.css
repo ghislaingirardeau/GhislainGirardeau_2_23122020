@@ -27,7 +27,11 @@ article,
 a {
   color: black;
 }
-/* fin bloc mise en forme */
+mark{
+  font-weight: bold;
+  background-color: white;
+}
+/* fin bloc et mise en forme globale*/
 /* Mise en forme header */
 header {
   display: flex;
