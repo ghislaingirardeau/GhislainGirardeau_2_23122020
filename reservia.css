@@ -315,15 +315,17 @@ aside #chart {
 .bloc_image_p div {
   margin-left: 10px;
   width: 50%;
-  height: 100%;
+  height: 98%;
   float: right;
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
-.bloc_image_p div i {
-  display: inline-block;
-  vertical-align: baseline;
+.bloc_image_p div p { /* ajout d'un display flex pour conserver les etoiles en bas avec le meme alignement en responsive  */
+  margin-top: -5%;
+  width: 100%;
 }
-
 /* mise en forme bloc activite */
 .activite {
   width: 100%;
@@ -565,9 +567,6 @@ aside #chart {
   margin-left: 5%;
   height: 220px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
 }
-.bloc_image_p div i {
-  margin-top: 40px;
-}
 /* Ajustement activite */
 .activite {
   order: 3;
@@ -697,10 +696,7 @@ aside #chart {
     width: 90%;
     height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
   }
-  .bloc_image_p div i {
-    vertical-align: baseline;
-    margin-top: unset;
-  }
+
   /* Ajustement activite */
   .bloc_image_a {
     height: 1260px;
