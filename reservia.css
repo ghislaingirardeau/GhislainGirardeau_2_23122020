@@ -664,20 +664,21 @@ aside #chart {
     width: 143%;
     height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
   }
+  /* ajustement plus petit format mobile */
   .bloc_image_h img {
-    object-position: 0 -110px;
+    object-position: 0 -45px;
   }
   article #les_mouettes{ /* pour un ajustement individuel a la reduction de la taille pour tablette*/
-    object-position: 0 -110px;
+    object-position: 0 -45px;
   }
   article #hotel_mer {
-    object-position: 0 -180px;
+    object-position: 0 -80px;
   }
   article #le_panier {
-    object-position: 0 -90px;
+    object-position: 0 -20px;
   }
   article #chez_amina {
-    object-position: 0 -310px;
+    object-position: 0 -170px;
   }
   #aff_plus {
     margin-top: 25px;
