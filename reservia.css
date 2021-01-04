@@ -349,7 +349,7 @@ aside #chart {
   justify-content: space-between;
   align-content: space-between;
 } /* taille d'image differente dans activité */
-.bloc_image_a p {
+.bloc_image_a h3 {
   /* meme propriete p dans toutes les images */
   height: 37px; /* 37+ 20px de padding top */
   width: 100%;
@@ -358,7 +358,6 @@ aside #chart {
   bottom: -18px;
   padding-left: 20px;
   padding-top: 20px;
-  font-weight: bold;
 }
 .bloc_image_a article {
   border-radius: 20px;
