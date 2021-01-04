@@ -27,7 +27,7 @@ article,
 a {
   color: black;
 }
-mark{
+mark {
   font-weight: bold;
   background-color: white;
 }
@@ -105,7 +105,6 @@ nav {
   font-weight: bold;
   outline: none;
   vertical-align: middle;
-  
 }
 #rechercher {
   width: 30%;
@@ -181,7 +180,6 @@ i[title="icone"] {
   background-color: #deebff;
   line-height: 50px;
   font-size: 1.1em;
-  margin-top: px;
   margin-left: -1px;
 }
 .bloc_filtre div:hover {
@@ -199,7 +197,6 @@ i[title="icone"] {
   padding-top: 5px;
   margin-right: 10px;
 }
-
 
 /* fin */
 main {
@@ -237,7 +234,6 @@ i[title="vide"] {
   height: 188px;
   border: 4px white solid;
   box-shadow: 5px 5px 3px #f2f2f2;
-  background-color: white;
   border-radius: 20px;
   overflow: hidden; /* pour masquer le rest de l'image */
   position: relative;
@@ -250,7 +246,7 @@ i[title="vide"] {
 .bloc_image_h div {
   width: 100%;
   background-color: white;
-  height: 77px;
+  height: 79px;
   padding-left: 10px;
   position: absolute;
   top: 60%;
@@ -505,7 +501,8 @@ footer li {
     float: left;
     margin-bottom: 20px;
   }
-  data { /* correction bug sous responinator */
+  data {
+    /* correction bug sous responinator */
     display: inline;
     vertical-align: -7px;
   }
@@ -690,7 +687,7 @@ footer li {
   }
   /* Ajustement populaire */
   aside {
-  margin-top: 30px;
+    margin-top: 30px;
   }
   aside #chart {
     float: right;
