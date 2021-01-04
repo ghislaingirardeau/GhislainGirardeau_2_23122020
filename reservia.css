@@ -188,7 +188,7 @@ i[title="icone"] {
   border-color: #0065fc;
   color: #0065fc;
 }
-data i {
+#info {
   /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
   color: #0065fc;
   width: 30px;
@@ -199,10 +199,7 @@ data i {
   padding-top: 5px;
   margin-right: 10px;
 }
-data p {
-  display: inline;
-  vertical-align: middle;
-}
+
 
 /* fin */
 main {
@@ -505,11 +502,11 @@ footer li {
     width: 40%;
   }
   /* Ajustement de data */
-  data i {
+  #info {
     float: left;
     margin-bottom: 20px;
   }
-  data p {
+  data { /* correction bug sous responinator */
     display: inline;
     vertical-align: -7px;
   }
@@ -657,10 +654,6 @@ footer li {
   #contour_filtre_ani {
     width: 63%;
   }
-  /* Ajustement de data */
-  data i {
-    margin-bottom: 40px;
-  }
 
   /* Ajustement hebergement */
 
@@ -697,6 +690,9 @@ footer li {
     margin-bottom: 25px;
   }
   /* Ajustement populaire */
+  aside {
+  margin-top: 30px;
+  }
   aside #chart {
     float: right;
     margin-right: 40px;
