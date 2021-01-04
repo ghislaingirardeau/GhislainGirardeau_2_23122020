@@ -190,6 +190,11 @@ data i {
   padding-top: 5px;
   margin-right: 10px;
 }
+data p{
+  display: inline;
+  vertical-align: middle;
+}
+
 /* fin */
 main {
   display: flex;
@@ -310,10 +315,13 @@ aside #chart {
 .bloc_image_p div {
   margin-left: 10px;
   width: 50%;
+  height: 100%;
   float: right;
+  background-color: blue;
 }
 .bloc_image_p div i {
-  margin-top: 25px;
+  display: inline-block;
+  vertical-align: baseline;
 }
 
 /* mise en forme bloc activite */
@@ -488,6 +496,10 @@ footer li {
 data i {
   float: left;
   margin-bottom: 20px;
+}
+data p{
+  display: inline;
+  vertical-align: -7px;
 }
 
 /* bloc main */
