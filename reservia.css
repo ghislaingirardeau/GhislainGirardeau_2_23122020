@@ -190,7 +190,7 @@ data i {
   padding-top: 5px;
   margin-right: 10px;
 }
-data p{
+data p {
   display: inline;
   vertical-align: middle;
 }
@@ -322,7 +322,8 @@ aside #chart {
   flex-wrap: wrap;
   align-content: space-around;
 }
-.bloc_image_p div p { /* ajout d'un display flex pour conserver les etoiles en bas avec le meme alignement en responsive  */
+.bloc_image_p div p {
+  /* ajout d'un display flex pour conserver les etoiles en bas avec le meme alignement en responsive  */
   margin-top: -5%;
   width: 100%;
 }
@@ -469,148 +470,149 @@ footer li {
     width: 70%;
     margin-bottom: -20px;
   }
-/* Ajustement du bloc filtre */
-.bloc_filtre {
-  flex-wrap: wrap;
-  height: 240px;
-  margin-bottom: 20px;
-}
-.bloc_filtre h4 {
-  width: 100%;
-  margin-bottom: 5px;
-}
-#contour_filtre_eco {
-  margin-right: 30px;
-  width: 30%;
-}
-#contour_filtre_fam {
-  width: 25%;
-  margin-right: 30px;
-}
-#contour_filtre_rom {
-  width: 30%;
-  margin-right: 30px;
-}
-#contour_filtre_ani {
-  width: 40%;
-}
-/* Ajustement de data */
-data i {
-  float: left;
-  margin-bottom: 20px;
-}
-data p{
-  display: inline;
-  vertical-align: -7px;
-}
+  /* Ajustement du bloc filtre */
+  .bloc_filtre {
+    flex-wrap: wrap;
+    height: 240px;
+    margin-bottom: 20px;
+  }
+  .bloc_filtre h4 {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  #contour_filtre_eco {
+    margin-right: 30px;
+    width: 30%;
+  }
+  #contour_filtre_fam {
+    width: 25%;
+    margin-right: 30px;
+  }
+  #contour_filtre_rom {
+    width: 30%;
+    margin-right: 30px;
+  }
+  #contour_filtre_ani {
+    width: 40%;
+  }
+  /* Ajustement de data */
+  data i {
+    float: left;
+    margin-bottom: 20px;
+  }
+  data p {
+    display: inline;
+    vertical-align: -7px;
+  }
 
-/* bloc main */
-main {
-  width: 100%;
-}
-.hebergement_m h2 {
-  width: 150%; /* pour un titre sur une seule ligne */
-}
-/* Ajustement hebergement */
-.hebergement_m {
-  order: 2;
-  border-radius: unset;
-  background-color: unset;
-  margin-top: 20px;
-}
-.bloc_image_h {
-  width: 150%;
-  height: 860px; /* height chaque article + espacement */
-}
-.bloc_image_h article {
-  width: 46.5%;
-  height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
-}
-.bloc_image_h div {
-  height: 127px;
-}
-/* ajustement des positions en fonction de la taille max, lors retrecissement les img recadrent mieux */
-
-article #les_mouettes{ /* pour un ajustement individuel a la reduction de la taille */
-  object-position: 0 -25px;
-}
-article #hotel_mer {
-  object-position: 0 -80px;
-}
-article #le_panier { /* pour un ajustement individuel a la reduction de la taille */
-  object-position: 0 0px;
-}
-article #chez_amina {
-  object-position: 0 -203px;
-}
-
-#aff_plus {
-  margin-top: 25px;
-  margin-bottom: 0px;
-}
-/* Ajustement populaire */
-aside {
-  order: 1;
-  border-radius: 0px;
-  width: 100%;
-  padding-left: 7%;
-  margin-left: -3.5%; /* background 100% largeur */
-}
-aside #chart {
-  float: right;
-  margin-right: 50px;
-}
-.bloc_image_p  {
-  height: 680px; /* height chaque article + espacement */
-}
-.bloc_image_p article {
-  margin-left: 5%;
-  height: 220px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
-}
-/* Ajustement activite */
-.activite {
-  order: 3;
-  padding-left: 3.5%; /* pour aligner tous mes titres */
-  width: 96.5%; /* je retire le padding left de 3.5% */
-  margin-bottom: 35px;
-}
-.bloc_image_a {
-  height: 640px; /* height chaque article + espacement */
-  width: 93%;
-  flex-direction: row;
-}
-.bloc_image_a article {
-  width: 46%;
-  height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
-  border-radius: 20px;
-}
-.image_a_fort img {
-  object-position: 0% 65%;
-}
-.image_a_ile img {
-  object-position: 0% -10%;
-}
-#vieux_port {
-  object-position: 50% 20%;
-}
-#calanques {
-  object-position: 50% 30%;
-}
-/* mise en forme footer */
-#a_propos {
-  width: 33%;
-  margin-left: 10px;
-}
-#nos_herbegements {
-  width: 33%;
-}
-#assistance {
-  width: 33%;
-}
+  /* bloc main */
+  main {
+    width: 100%;
+  }
+  .hebergement_m h2 {
+    width: 150%; /* pour un titre sur une seule ligne */
+  }
+  /* Ajustement hebergement */
+  .hebergement_m {
+    order: 2;
+    border-radius: unset;
+    background-color: unset;
+    margin-top: 20px;
+  }
+  .bloc_image_h {
+    width: 150%;
+    height: 860px; /* height chaque article + espacement */
+  }
+  .bloc_image_h article {
+    width: 46.5%;
+    height: 270px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+  }
+  .bloc_image_h div {
+    height: 127px;
+  }
+  /* ajustement des positions en fonction de la taille max, lors retrecissement les img recadrent mieux */
+  article #les_mouettes {
+    /* pour un ajustement individuel a la reduction de la taille */
+    object-position: 0 -25px;
+  }
+  article #hotel_mer {
+    object-position: 0 -80px;
+  }
+  article #le_panier {
+    /* pour un ajustement individuel a la reduction de la taille */
+    object-position: 0 0px;
+  }
+  article #chez_amina {
+    object-position: 0 -203px;
+  }
+  #aff_plus {
+    margin-top: 25px;
+    margin-bottom: 0px;
+  }
+  /* Ajustement populaire */
+  aside {
+    order: 1;
+    border-radius: 0px;
+    width: 100%;
+    padding-left: 7%;
+    margin-left: -3.5%; /* background 100% largeur */
+  }
+  aside #chart {
+    float: right;
+    margin-right: 50px;
+  }
+  .bloc_image_p {
+    height: 680px; /* height chaque article + espacement */
+  }
+  .bloc_image_p article {
+    margin-left: 5%;
+    height: 220px; /* (height bloc - ecart image 15px/ecart)/nbre bloc */
+  }
+  /* Ajustement activite */
+  .activite {
+    order: 3;
+    padding-left: 3.5%; /* pour aligner tous mes titres */
+    width: 96.5%; /* je retire le padding left de 3.5% */
+    margin-bottom: 35px;
+  }
+  .bloc_image_a {
+    height: 640px; /* height chaque article + espacement */
+    width: 93%;
+    flex-direction: row;
+  }
+  .bloc_image_a article {
+    width: 46%;
+    height: 199px; /* (height bloc - ecart image 13px/ecart)/nbre bloc */
+    border-radius: 20px;
+  }
+  /* 1er ajustement image pour tablette */
+  .image_a_fort img {
+    object-position: 0% 65%;
+  }
+  .image_a_ile img {
+    object-position: 0% -10%;
+  }
+  #vieux_port {
+    object-position: 50% 20%;
+  }
+  #calanques {
+    object-position: 50% 30%;
+  }
+  /* mise en forme footer */
+  #a_propos {
+    width: 33%;
+    margin-left: 10px;
+  }
+  #nos_herbegements {
+    width: 33%;
+  }
+  #assistance {
+    width: 33%;
+  }
 }
 @media screen and (max-width: 678px) {
   /* petit ecran */
- 
+
   #logo {
     margin-left: 20px;
   }
@@ -652,7 +654,7 @@ aside #chart {
   }
 
   /* Ajustement hebergement */
-  
+
   .bloc_image_h {
     display: flex;
     flex-direction: column;
@@ -668,7 +670,8 @@ aside #chart {
   .bloc_image_h img {
     object-position: 0 -45px;
   }
-  article #les_mouettes{ /* pour un ajustement individuel a la reduction de la taille pour tablette*/
+  article #les_mouettes {
+    /* pour un ajustement individuel a la reduction de la taille pour tablette*/
     object-position: 0 -45px;
   }
   article #hotel_mer {
@@ -689,7 +692,7 @@ aside #chart {
     float: right;
     margin-right: 40px;
   }
-  .bloc_image_p  {
+  .bloc_image_p {
     height: 550px; /* height chaque article + espacement */
   }
   .bloc_image_p article {
@@ -707,13 +710,13 @@ aside #chart {
     width: 93%;
   }
   .bloc_image_a article img {
-    object-position: 0% 50%;
+    object-position: 0% 45%;
   }
   #vieux_port {
     object-position: 50% 50%;
   }
   #calanques {
-    object-position: 50% 50%;
+    object-position: 0 0px;
   }
   #notre_dame {
     object-position: 0% 25%;
