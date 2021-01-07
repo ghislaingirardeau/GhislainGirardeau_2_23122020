@@ -1,8 +1,9 @@
 #bloc_page {
   /* width en % et min-height px pour les blocs pour qu'ils s'adapte en auto */
 
-  width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
+  max-width: 1440px; /* sauf pour le bloc image en px pour un rendu plus proche de l'image */
   height: 1884px;
+  margin: auto;
   font-family: raleway, Verdana, Geneva, Tahoma, sans-serif;
 } /* flexbox en organisation general page puis detaillé dans les blocs */
 
@@ -434,7 +435,7 @@ footer li {
 @media screen and (max-width: 991px) {
   /* ecran tablette */
   #bloc_page {
-    width: 99%;
+    /*width: 99%;  */
     height: 100%;
   }
   header {
