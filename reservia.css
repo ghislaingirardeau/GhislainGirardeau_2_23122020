@@ -435,7 +435,7 @@ footer li {
 li a {
   text-decoration: none;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1025px) {
   /* ecran tablette */
   #bloc_page {
     height: 100%;
