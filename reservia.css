@@ -49,6 +49,7 @@ header {
   width: 20%;
   margin-top: 20px;
 }
+/* mise en forme ancre et header*/
 .ancre {
   width: 20%;
   display: flex;
@@ -83,7 +84,7 @@ nav {
   width: 93%; /* -7% pour prendre en compte les marges left and right */
   margin: auto;
 }
-/* mise en forme recherche */
+/* mise en forme bouton recherche */
 .recherche {
   margin-top: 30px;
   width: 31%;
@@ -186,6 +187,7 @@ i[title="icone"] {
   border-color: #0065fc;
   color: #0065fc;
 }
+/* fin mise en forme filtre */
 #info {
   /* ne prend pas le line-height, alors paddingtop que j'ajoute a la width */
   color: #0065fc;
@@ -198,7 +200,7 @@ i[title="icone"] {
   margin-right: 10px;
 }
 
-/* fin */
+/* fin de nav */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -259,7 +261,6 @@ i[title="vide"] {
 p {
   margin-bottom: 10px; /* ecart p et etoile */
 }
-
 article #hotel_mer {
   /* appeler le bloc pour ensuite la balise a l'interieur */
   object-fit: contain;
@@ -618,7 +619,7 @@ li a {
   /* petit ecran */
 
   #logo {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   /* Ajustement du bloc recherche */
   .recherche {
