@@ -1,0 +1,129 @@
+@media screen and (max-width: 678px) {
+  /* petit ecran */
+
+  #logo {
+    margin-left: 20px;
+  }
+  /* Ajustement du bloc recherche */
+  .recherche {
+    width: 100%;
+  }
+  #rechercher {
+    display: none;
+  }
+  #champs {
+    width: 60%;
+  }
+  #loupe {
+    display: unset;
+  }
+  /* Ajustement du bloc filtre */
+  .bloc_filtre {
+    margin-bottom: 25px;
+  }
+  #contour_filtre_eco {
+    margin-right: 14px;
+    width: 51%;
+  }
+  #contour_filtre_fam {
+    width: 40%;
+    margin-right: unset;
+  }
+  #contour_filtre_rom {
+    width: 49%;
+    margin-right: unset;
+  }
+  #contour_filtre_ani {
+    width: 63%;
+  }
+
+  /* Ajustement hebergement */
+
+  .bloc_image_hebergement {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 1250px;
+    width: 100%;
+  }
+  .bloc_image_hebergement article {
+    width: 143%;
+    height: 193px; /* (height bloc - ecart image 25px/ecart)/nbre bloc */
+  }
+  /* ajustement plus petit format mobile */
+  .bloc_image_hebergement img {
+    object-position: 0 -45px;
+  }
+  article #les_mouettes {
+    /* pour un ajustement individuel a la reduction de la taille pour tablette*/
+    object-position: 0 -45px;
+  }
+  article #hotel_mer {
+    object-position: 0 -80px;
+  }
+  article #le_panier {
+    object-position: 0 -20px;
+  }
+  article #chez_amina {
+    object-position: 0 -170px;
+  }
+  #aff_plus {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  /* Ajustement populaire */
+  aside {
+    margin-top: 30px;
+  }
+  aside #chart {
+    float: right;
+    margin-right: 40px;
+  }
+  .section_populaire {
+    height: 550px; /* height chaque article + espacement */
+  }
+  .section_populaire article {
+    margin-left: unset;
+    width: 90%;
+    height: 150px; /* (height bloc - ecart image 12px/ecart)/nbre bloc */
+  }
+
+  /* Ajustement activite */
+  .bloc_image_activites {
+    height: 1260px;
+    width: 100%;
+  }
+  .bloc_image_activites article {
+    width: 93%;
+  }
+  .bloc_image_activites article img {
+    object-position: 0% 45%;
+  }
+  #vieux_port {
+    object-position: 50% 50%;
+  }
+  #calanques {
+    object-position: 0 0px;
+  }
+  #notre_dame {
+    object-position: 0% 25%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 7%;
+    margin-left: -3.5%;
+    padding-top: 10px;
+  }
+  #a_propos {
+    width: 93%;
+    margin-left: unset;
+  }
+  #nos_herbegements {
+    width: 93%;
+  }
+  #assistance {
+    width: 93%;
+  }
+}

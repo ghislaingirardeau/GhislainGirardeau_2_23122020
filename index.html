@@ -21,8 +21,8 @@
         <!-- img dans div pour controler le format de l'image dans le conteneur -->
         <div class="ancre">
             <!-- ajout des ancres -->
-            <a href="#HM">Hébergements</a>
-            <a href="#AM">Activités</a>
+            <a href="#hébergement">Hébergements</a>
+            <a href="#activites">Activités</a>
         </div>
         <a href="#" id="lien_inscire">S'inscire</a><!-- media queries : changer ordre, inscrire ordre  -->
         
@@ -62,10 +62,10 @@
     </nav>
 
     <main>
-        <section class="hebergement_m">
-            <h2 id="HM">Hébergements à Marseille</h2> <!-- id pour relier aux ancres -->
+        <section class="section_hebergement">
+            <h2 id="hébergement">Hébergements à Marseille</h2> <!-- id pour relier aux ancres -->
             <!-- layout identique pour chaque titre -->
-            <div class="bloc_image_h">
+            <div class="bloc_image_hebergement">
                 <!-- meme css pour les image_h du groupe -->
                 <article><a href="#">
                         <img src="element/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
@@ -144,7 +144,7 @@
         </section>
 
         <aside>
-            <section class="bloc_image_p">
+            <section class="section_populaire">
                 <h2>Les plus populaires <i class="fas fa-chart-line" id="chart"></i></h2>
                 <!-- meme css pour les div du groupe -->
                 <article><a href="#">
@@ -186,9 +186,9 @@
             </section>
         </aside>
 
-        <section class="activite">
-            <h2 id="AM">Activités à Marseille</h2> <!-- id pour relier aux ancres -->
-            <div class="bloc_image_a">
+        <section class="section_activites">
+            <h2 id="activites">Activités à Marseille</h2> <!-- id pour relier aux ancres -->
+            <div class="bloc_image_activites">
                 <!-- class pour chaque article car chaque bloc a une taille unique-->
                 <article class="image_a_long"><a href="#">
                         <!-- ajout nom class long car 2 format identique css -->
@@ -231,23 +231,23 @@
         <div id="a_propos">
             <h4>A propos</h4>
             <ul>
-                <li>Foctionnement du site</li>
-                <li>Conditions générales de vente</li>
-                <li>Données et confidentialité</li>
+                <li><a href="#">Foctionnement du site</a></li>
+                <li><a href="#">Conditions générales de vente</a></li>
+                <li><a href="#">Données et confidentialité</a></li>
             </ul>
         </div>
         <div id="nos_herbegements">
             <h4>Nos hébergements</h4>
             <ul>
-                <li>Charte de qualité</li>
-                <li>Soumettre votre hôtel</li>
+                <li><a href="#">Charte de qualité</a></li>
+                <li><a href="#">Soumettre votre hôtel</a></li>
             </ul>
         </div>
         <div id="assistance">
             <h4>Assistance</h4>
             <ul>
-                <li>Centre d'aide</li>
-                <li>Nous contacter</li>
+                <li><a href="#">Centre d'aide</a></li>
+                <li><a href="#">Nous contacter</a></li>
             </ul>
         </div>
     </footer>
